@@ -22,6 +22,11 @@ dupe_3 = ('R', "R'", 'R2', 'L', "L'", 'L2')
 scramble = []
 loop = range(0, scramble_length)
 
+# def scramble_3_length_set():
+#    for _ in range(17,25):
+#        length = randint(17,25)
+#        return length
+
 
 def scramble_3_integer():
     for _ in range(0, scramble_length):
