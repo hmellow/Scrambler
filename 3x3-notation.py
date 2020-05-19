@@ -1,1 +1,1 @@
-print('please push this file dumb app')
+import discord
