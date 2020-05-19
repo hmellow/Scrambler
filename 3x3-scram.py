@@ -94,11 +94,8 @@ def scramble_3_assignment(integer):
 for _ in range(0, scramble_length):
     scramble.append(scramble_3_assignment(scramble_3_integer()))
 
-# 2
-print(len(scramble))
-
 # Trying something
-def check_for_dupes ():
+def check_for_dupes():
     for x in loop:
         dupe_run = True
         if x <= scramble_length - 2:
@@ -112,16 +109,7 @@ def check_for_dupes ():
                 scramble.insert(x + 1, scramble_3_assignment(scramble_3_integer()))
                 check_for_dupes()
 
-#    while scramble[x] and scramble[x + 1] in dupe_1:
-#        scramble.insert(x + 1, scramble_3_assignment(scramble_3_integer()))
-#        dupe_run = False
-#    if dupe_run:
-#        while scramble[x] and scramble[x + 1] in dupe_2:
-#            scramble.insert(x + 1, scramble_3_assignment(scramble_3_integer()))
-#            dupe_run = False
-#    elif dupe_run:
-#        while scramble[x] and scramble[x + 1] in dupe_3:
-#            scramble.insert(x + 1, scramble_3_assignment(scramble_3_integer()))
-#            dupe_run = False
+    return scramble
 
-print(scramble)
+
+print(check_for_dupes())
