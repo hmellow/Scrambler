@@ -15,26 +15,22 @@ from random import randint
 # Separate moves using spaces only
 # Int length later by adding length parameter
 # In the future maybe allow moves like: (L, R)
+
 scramble_length = 17
 dupe_1 = ('U', "U'", 'U2', 'D', "D'", 'D2')
 dupe_2 = ('F', "F'", 'F2', 'B', "B'", 'B2')
 dupe_3 = ('R', "R'", 'R2', 'L', "L'", 'L2')
 scramble = []
 
-# def scramble_3_length_set():
-#    for _ in range(17,25):
-#        length = randint(17,25)
-#        return length
-
+def scramble_3_length_set():
+    for _ in range(17,25):
+        length = randint(17,25)
+        return length
 
 def scramble_3_integer():
     for _ in range(0, scramble_length):
         value = randint(0, 17)
         return value
-
-
-# Generates random integer to determine directional move
-
 
 def scramble_3_assignment(integer):
     if integer == 0:
@@ -92,12 +88,6 @@ def scramble_3_assignment(integer):
         character = 'L2'
         return character
 
-
-# Assigns a character based on integer input
-# 1
-for _ in range(0, scramble_length):
-    scramble.append(scramble_3_assignment(scramble_3_integer()))
-
 def check_for_dupes(s, sl, d1, d2, d3):
     '''
     Checks to see if any "dupes" excist in the string according to the included tuplets
@@ -123,4 +113,16 @@ def check_for_dupes(s, sl, d1, d2, d3):
     # Returns the new, un-duplicated list
     return s
 
-print(check_for_dupes(scramble, scramble_length, dupe_1, dupe_2, dupe_3))
+
+# ==============Main Code===============
+# Sets the scramble_length
+scramble_3_length_set()
+
+# Assigns a character based on random integer input (Creates the scramble list)
+for _ in range(0, scramble_length):
+    scramble.append(scramble_3_assignment(scramble_3_integer()))
+
+# Checks for "dupes"
+scramble = check_for_dupes(scramble, scramble_length, dupe_1, dupe_2, dupe_3)
+
+print(scramble)
