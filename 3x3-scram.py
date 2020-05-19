@@ -20,7 +20,6 @@ dupe_1 = ('U', "U'", 'U2', 'D', "D'", 'D2')
 dupe_2 = ('F', "F'", 'F2', 'B', "B'", 'B2')
 dupe_3 = ('R', "R'", 'R2', 'L', "L'", 'L2')
 scramble = []
-loop = range(0, scramble_length)
 
 
 def scramble_3_integer():
@@ -94,22 +93,29 @@ def scramble_3_assignment(integer):
 for _ in range(0, scramble_length):
     scramble.append(scramble_3_assignment(scramble_3_integer()))
 
-# Trying something
-def check_for_dupes():
-    for x in loop:
-        dupe_run = True
-        if x <= scramble_length - 2:
-            while (scramble[x] in dupe_1) and (scramble[x + 1] in dupe_1):
-                scramble.insert(x + 1, scramble_3_assignment(scramble_3_integer()))
-                check_for_dupes()
-            while (scramble[x] in dupe_2) and (scramble[x + 1] in dupe_2):
-                scramble.insert(x + 1, scramble_3_assignment(scramble_3_integer()))
-                check_for_dupes()
-            while (scramble[x] in dupe_3) and (scramble[x + 1] in dupe_3):
-                scramble.insert(x + 1, scramble_3_assignment(scramble_3_integer()))
-                check_for_dupes()
+def check_for_dupes(s, sl, d1, d2, d3):
+    '''
+    Checks to see if any "dupes" excist in the string according to the included tuplets
 
-    return scramble
+    s: Scramble list
+    sl: Scramble length
+    d1 - d3: Dupe tuplet
+    '''
+    # Runs scramble_length time (shortens by 2 to ensure no calls to a non exsitant idex are made)
+    for x in range(0, sl - 2):
+        # Checks if there is a dupe from the first tuplet, if so it replaces it and reruns to ensure it didn't create a new dupe)
+        while (s[x] in d1) and (s[x + 1] in d1):
+            s.insert(x + 1, scramble_3_assignment(scramble_3_integer()))
+            s = check_for_dupes(s, sl, d1, d2, d3)
+        # Second dupe check
+        while (s[x] in d2) and (s[x + 1] in d2):
+            s.insert(x + 1, scramble_3_assignment(scramble_3_integer()))
+            s = check_for_dupes(s, sl, d1, d2, d3)
+        # Third dupe check
+        while (s[x] in d3) and (s[x + 1] in d3):
+            s.insert(x + 1, scramble_3_assignment(scramble_3_integer()))
+            s = check_for_dupes(s, sl, d1, d2, d3)
+    # Returns the new, un-duplicated list
+    return s
 
-
-print(check_for_dupes())
+print(check_for_dupes(scramble, scramble_length, dupe_1, dupe_2, dupe_3))
