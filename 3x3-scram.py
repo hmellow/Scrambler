@@ -24,9 +24,11 @@ loop = range(0, scramble_length)
 
 
 def scramble_3_integer():
-    for _ in range(1):
-        value = randint(0, scramble_length)
+    for _ in range(0, scramble_length):
+        value = randint(0, 17)
         return value
+
+
 # Generates random integer to determine directional move
 
 
@@ -85,39 +87,28 @@ def scramble_3_assignment(integer):
     elif integer == 17:
         character = 'L2'
         return character
-# Assigns a character based on integer input
 
+
+# Assigns a character based on integer input
 # 1
 scramble.append(scramble_3_assignment(scramble_3_integer()))
 
 # 2
 scramble.append(scramble_3_assignment(scramble_3_integer()))
 
-
-# while scramble[0] and scramble[1] in dupe_1 or dupe_2 or dupe_3:
-#    scramble.insert(1, scramble_3_assignment(scramble_3_integer()))
-
-
-#Trying something
+# Trying something
 for x in loop:
     dupe_run = True
-        while scramble[x] and scramble[x + 1] in dupe_1:
+    while scramble[x] and scramble[x + 1] in dupe_1:
+        scramble.insert(x + 1, scramble_3_assignment(scramble_3_integer()))
+        dupe_run = False
+    if dupe_run:
+        while scramble[x] and scramble[x + 1] in dupe_2:
             scramble.insert(x + 1, scramble_3_assignment(scramble_3_integer()))
             dupe_run = False
-        if dupe_run:
-            while scramble[x] and scramble[x + 1] in dupe_2:
-                scramble.insert(x + 1, scramble_3_assignment(scramble_3_integer()))
-                dupe_run = False
-        elif dupe_run:
-            while scramble[x] and scramble[x + 1] in dupe_3:
-                scramble.insert(x + 1, scramble_3_assignment(scramble_3_integer()))
-                dupe_run = False
-
-
-
-
-
-
-
+    elif dupe_run:
+        while scramble[x] and scramble[x + 1] in dupe_3:
+            scramble.insert(x + 1, scramble_3_assignment(scramble_3_integer()))
+            dupe_run = False
 
 print(scramble)
