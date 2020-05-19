@@ -15,16 +15,17 @@ from random import randint
 # Separate moves using spaces only
 # Int length later by adding length parameter
 # In the future maybe allow moves like: (L, R)
-
+scramble_length = 17
 dupe_1 = ('U', "U'", 'U2', 'D', "D'", 'D2')
 dupe_2 = ('F', "F'", 'F2', 'B', "B'", 'B2')
 dupe_3 = ('R', "R'", 'R2', 'L', "L'", 'L2')
 scramble = []
+loop = range(0, scramble_length)
 
 
 def scramble_3_integer():
     for _ in range(1):
-        value = randint(0, 17)
+        value = randint(0, scramble_length)
         return value
 # Generates random integer to determine directional move
 
@@ -91,8 +92,32 @@ scramble.append(scramble_3_assignment(scramble_3_integer()))
 
 # 2
 scramble.append(scramble_3_assignment(scramble_3_integer()))
-while scramble[0] and scramble[1] in dupe_1 or dupe_2 or dupe_3:
-    scramble.insert(1, scramble_3_assignment(scramble_3_integer()))
+
+
+# while scramble[0] and scramble[1] in dupe_1 or dupe_2 or dupe_3:
+#    scramble.insert(1, scramble_3_assignment(scramble_3_integer()))
+
+
+#Trying something
+for x in loop:
+    dupe_run = True
+        while scramble[x] and scramble[x + 1] in dupe_1:
+            scramble.insert(x + 1, scramble_3_assignment(scramble_3_integer()))
+            dupe_run = False
+        if dupe_run:
+            while scramble[x] and scramble[x + 1] in dupe_2:
+                scramble.insert(x + 1, scramble_3_assignment(scramble_3_integer()))
+                dupe_run = False
+        elif dupe_run:
+            while scramble[x] and scramble[x + 1] in dupe_3:
+                scramble.insert(x + 1, scramble_3_assignment(scramble_3_integer()))
+                dupe_run = False
+
+
+
+
+
+
 
 
 print(scramble)
