@@ -91,18 +91,19 @@ def scramble_3_assignment(integer):
         character = 'L2'
         return character
 
-
 def check_for_dupes(s, sl, d1, d2, d3):
     """
-    Checks to see if any "dupes" excist in the string according to the included tuplets
+    Checks to see if any "dupes" excist
+    in the string according to the included tuplets
+
     s: Scramble list
     sl: Scramble length
     d1 - d3: Dupe tuplet
     """
     # Runs scramble_length time (shortens by 2 to ensure no calls to a non exsitant idex are made)
     for x in range(0, sl - 2):
-        # Checks if there is a dupe from the first tuplet, if so it replaces it and...
-        # ...reruns to ensure it didn't create a new dupe)
+        # Checks if there is a dupe from the first tuplet,
+        # if so it replaces it and reruns to ensure it didn't create a new dupe)
         while (s[x] in d1) and (s[x + 1] in d1):
             s.insert(x + 1, scramble_3_assignment(scramble_3_integer()))
             s = check_for_dupes(s, sl, d1, d2, d3)
@@ -129,7 +130,9 @@ for _ in range(0, scramble_length):
 # Checks for "dupes"
 scramble = check_for_dupes(scramble, scramble_length, dupe_1, dupe_2, dupe_3)
 
+print(scramble)
 
-check_for_dupes()
-# You will need a file which will allow for talk between the python scripts. It is, as far as I can tell...,
-# ...the only way to allow them to communicate
+# with open(fileName, permission) as f:
+#     code you want to do here
+# You will need a file which will allow for talk between the python scripts.
+# It is, as far as I can tell, the only way to allow them to communicate
