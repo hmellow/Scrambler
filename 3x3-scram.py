@@ -126,3 +126,5 @@ for _ in range(0, scramble_length):
 scramble = check_for_dupes(scramble, scramble_length, dupe_1, dupe_2, dupe_3)
 
 print(scramble)
+
+# You will need a file which will allow for talk between the python scripts. It is, as far as I can tell, the only way to allow them to communicate
