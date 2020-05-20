@@ -132,5 +132,7 @@ def scramble3x3(slmin, slmax):
         scramble.append(scramble_3_assignment(scramble_3_integer()))
 
     # Checks for "dupes"
-    scramble = check_for_dupes(scramble, scramble_length, dupe_1, dupe_2, dupe_3).join(scramble, ' ')
+    scramble = check_for_dupes(scramble, scramble_length, dupe_1, dupe_2, dupe_3)
+    scramble = ' '.join(scramble)
     return scramble
+print(scramble3x3(17,25))
