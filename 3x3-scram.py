@@ -93,12 +93,12 @@ def scramble_3_assignment(integer):
 
 
 def check_for_dupes(s, sl, d1, d2, d3):
-    '''
+    """
     Checks to see if any "dupes" excist in the string according to the included tuplets
     s: Scramble list
     sl: Scramble length
     d1 - d3: Dupe tuplet
-    '''
+    """
     # Runs scramble_length time (shortens by 2 to ensure no calls to a non exsitant idex are made)
     for x in range(0, sl - 2):
         # Checks if there is a dupe from the first tuplet, if so it replaces it and...
@@ -129,7 +129,6 @@ for _ in range(0, scramble_length):
 # Checks for "dupes"
 scramble = check_for_dupes(scramble, scramble_length, dupe_1, dupe_2, dupe_3)
 
-print(scramble)
 
 check_for_dupes()
 # You will need a file which will allow for talk between the python scripts. It is, as far as I can tell...,
