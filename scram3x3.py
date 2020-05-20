@@ -133,4 +133,4 @@ def scramble3x3(slMin, slMax):
 
     # Checks for "dupes"
     scramble = check_for_dupes(scramble, scramble_length, dupe_1, dupe_2, dupe_3)
-    print(scramble)
+    return join(scramble, ' ')
