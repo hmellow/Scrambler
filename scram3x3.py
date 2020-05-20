@@ -16,8 +16,6 @@ from random import randint
 # Int length later by adding length parameter
 # In the future maybe allow moves like: (L, R)
 
-scramble_length = 17
-
 
 def scramble_3_length_set(sl):
     for _ in range(sl, 25):
@@ -122,7 +120,7 @@ def scramble3x3(sl):
     """
     Given a scramble length, will return a randomized list of scramble combos
     """
-    
+
     dupe_1 = ('U', "U'", 'U2', 'D', "D'", 'D2')
     dupe_2 = ('F', "F'", 'F2', 'B', "B'", 'B2')
     dupe_3 = ('R', "R'", 'R2', 'L', "L'", 'L2')
