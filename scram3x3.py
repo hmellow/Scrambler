@@ -117,8 +117,12 @@ def check_for_dupes(s, sl, d1, d2, d3):
     return s
 
 
-# ==============Main Code===============
+# ==============Main Function=================
 def scramble3x3(sl):
+    """
+    Given a scramble length, will return a randomized list of scramble combos
+    """
+    
     dupe_1 = ('U', "U'", 'U2', 'D', "D'", 'D2')
     dupe_2 = ('F', "F'", 'F2', 'B', "B'", 'B2')
     dupe_3 = ('R', "R'", 'R2', 'L', "L'", 'L2')
@@ -134,4 +138,3 @@ def scramble3x3(sl):
     # Checks for "dupes"
     scramble = check_for_dupes(scramble, scramble_length, dupe_1, dupe_2, dupe_3)
     print(scramble)
-
