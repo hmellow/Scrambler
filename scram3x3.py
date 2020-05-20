@@ -17,8 +17,8 @@ from random import randint
 # In the future maybe allow moves like: (L, R)
 
 
-def scramble_3_length_set(slMin, slMax):
-    length = randint(slMin, slMax)
+def scramble_3_length_set(slmin, slmax):
+    length = randint(slmin, slmax)
     return length
 
 
@@ -114,7 +114,7 @@ def check_for_dupes(s, sl, d1, d2, d3):
 
 
 # ==============Main Function=================
-def scramble3x3(slMin, slMax):
+def scramble3x3(slmin, slmax):
     """
     Given a scramble length, will return a randomized list of scramble combos
     """
@@ -125,7 +125,7 @@ def scramble3x3(slMin, slMax):
     scramble = []
 
     # Sets the scramble_length
-    scramble_length = scramble_3_length_set(slMin, slMax)
+    scramble_length = scramble_3_length_set(slmin, slmax)
 
     # Assigns a character based on random integer input (Creates the scramble list)
     for _ in range(0, scramble_length):
