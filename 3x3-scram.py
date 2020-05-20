@@ -22,15 +22,18 @@ dupe_2 = ('F', "F'", 'F2', 'B', "B'", 'B2')
 dupe_3 = ('R', "R'", 'R2', 'L', "L'", 'L2')
 scramble = []
 
+
 def scramble_3_length_set():
-    for _ in range(17,25):
-        length = randint(17,25)
+    for _ in range(17, 25):
+        length = randint(17, 25)
         return length
+
 
 def scramble_3_integer():
     for _ in range(0, scramble_length):
         value = randint(0, 17)
         return value
+
 
 def scramble_3_assignment(integer):
     if integer == 0:
@@ -87,6 +90,7 @@ def scramble_3_assignment(integer):
     elif integer == 17:
         character = 'L2'
         return character
+
 
 def check_for_dupes(s, sl, d1, d2, d3):
     '''
