@@ -22,15 +22,18 @@ dupe_2 = ('F', "F'", 'F2', 'B', "B'", 'B2')
 dupe_3 = ('R', "R'", 'R2', 'L', "L'", 'L2')
 scramble = []
 
+
 def scramble_3_length_set():
-    for _ in range(17,25):
-        length = randint(17,25)
+    for _ in range(17, 25):
+        length = randint(17, 25)
         return length
+
 
 def scramble_3_integer():
     for _ in range(0, scramble_length):
         value = randint(0, 17)
         return value
+
 
 def scramble_3_assignment(integer):
     if integer == 0:
@@ -88,6 +91,7 @@ def scramble_3_assignment(integer):
         character = 'L2'
         return character
 
+
 def check_for_dupes(s, sl, d1, d2, d3):
     '''
     Checks to see if any "dupes" excist in the string according to the included tuplets
@@ -98,7 +102,7 @@ def check_for_dupes(s, sl, d1, d2, d3):
     '''
     # Runs scramble_length time (shortens by 2 to ensure no calls to a non exsitant idex are made)
     for x in range(0, sl - 2):
-        # Checks if there is a dupe from the first tuplet, if so it replaces it and reruns to ensure it didn't create a new dupe)
+# Checks if there is a dupe from the first tuplet, if so it replaces it and reruns to ensure it didn't create a new dupe)
         while (s[x] in d1) and (s[x + 1] in d1):
             s.insert(x + 1, scramble_3_assignment(scramble_3_integer()))
             s = check_for_dupes(s, sl, d1, d2, d3)
