@@ -17,15 +17,11 @@ from random import randint
 # In the future maybe allow moves like: (L, R)
 
 scramble_length = 17
-dupe_1 = ('U', "U'", 'U2', 'D', "D'", 'D2')
-dupe_2 = ('F', "F'", 'F2', 'B', "B'", 'B2')
-dupe_3 = ('R', "R'", 'R2', 'L', "L'", 'L2')
-scramble = []
 
 
-def scramble_3_length_set():
-    for _ in range(17, 25):
-        length = randint(17, 25)
+def scramble_3_length_set(sl):
+    for _ in range(sl, 25):
+        length = randint(sl, 25)
         return length
 
 
@@ -91,18 +87,20 @@ def scramble_3_assignment(integer):
         character = 'L2'
         return character
 
+
 def check_for_dupes(s, sl, d1, d2, d3):
     """
-    Checks to see if any "dupes" excist
-    in the string according to the included tuplets
-
-    s: Scramble list
-    sl: Scramble length
-    d1 - d3: Dupe tuplet
+    Checks to see if any "dupes" exist
+    in the string according to the included tuples
+    \n
+    Arguments: \n
+    s - Scramble list \n
+    sl - Scramble length \n
+    d1 through d3 - Dupe tuples \n
     """
-    # Runs scramble_length time (shortens by 2 to ensure no calls to a non exsitant idex are made)
+    # Runs scramble_length time (shortens by 2 to ensure no calls to a non existent index are made)
     for x in range(0, sl - 2):
-        # Checks if there is a dupe from the first tuplet,
+        # Checks if there is a dupe from the first tuple,
         # if so it replaces it and reruns to ensure it didn't create a new dupe)
         while (s[x] in d1) and (s[x + 1] in d1):
             s.insert(x + 1, scramble_3_assignment(scramble_3_integer()))
@@ -120,19 +118,20 @@ def check_for_dupes(s, sl, d1, d2, d3):
 
 
 # ==============Main Code===============
-# Sets the scramble_length
-scramble_3_length_set()
+def scramble3x3(sl):
+    dupe_1 = ('U', "U'", 'U2', 'D', "D'", 'D2')
+    dupe_2 = ('F', "F'", 'F2', 'B', "B'", 'B2')
+    dupe_3 = ('R', "R'", 'R2', 'L', "L'", 'L2')
+    scramble = []
 
-# Assigns a character based on random integer input (Creates the scramble list)
-for _ in range(0, scramble_length):
-    scramble.append(scramble_3_assignment(scramble_3_integer()))
+    # Sets the scramble_length
+    scramble_3_length_set(sl)
 
-# Checks for "dupes"
-scramble = check_for_dupes(scramble, scramble_length, dupe_1, dupe_2, dupe_3)
+    # Assigns a character based on random integer input (Creates the scramble list)
+    for _ in range(0, scramble_length):
+        scramble.append(scramble_3_assignment(scramble_3_integer()))
 
-print(scramble)
+    # Checks for "dupes"
+    scramble = check_for_dupes(scramble, scramble_length, dupe_1, dupe_2, dupe_3)
+    print(scramble)
 
-# with open(fileName, permission) as f:
-#     code you want to do here
-# You will need a file which will allow for talk between the python scripts.
-# It is, as far as I can tell, the only way to allow them to communicate
