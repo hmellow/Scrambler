@@ -1,6 +1,6 @@
 def write(mode = 'user', *args):
     if mode == 'user':
-        i = input('Please enter what you wish to put in the file:')
+        i = input('write to env:')
         with open('.env', mode='w+') as f:
             f.write(i)
         print('File sucessfully written')
