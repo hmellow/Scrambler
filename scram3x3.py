@@ -138,3 +138,4 @@ def scramble3x3(slmin, slmax):
 
 
 print(scramble3x3(17, 25))
+# This is used for testing and will be removed later.
