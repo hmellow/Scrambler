@@ -101,14 +101,17 @@ def check_for_dupes(s, sl, d1, d2, d3):
         while (s[x] in d1) and (s[x + 1] in d1):
             s.insert(x + 1, scramble_3_assignment(scramble_3_integer()))
             s = check_for_dupes(s, sl, d1, d2, d3)
+            print(1)
         # Second dupe check
         while (s[x] in d2) and (s[x + 1] in d2):
             s.insert(x + 1, scramble_3_assignment(scramble_3_integer()))
             s = check_for_dupes(s, sl, d1, d2, d3)
+            print(2)
         # Third dupe check
         while (s[x] in d3) and (s[x + 1] in d3):
             s.insert(x + 1, scramble_3_assignment(scramble_3_integer()))
             s = check_for_dupes(s, sl, d1, d2, d3)
+            print(3)
     # Returns the new, un-duplicated list
     return s
 
