@@ -20,7 +20,7 @@ driver.find_element_by_xpath("//span[contains(text(),'next')]").click()
 
 time.sleep(1)
 
-scramble = driver.find_element_by_id('scrambleTxt')
+scramble = driver.find_element_by_id('scrambleTxt').text
 
 print(scramble)
 
