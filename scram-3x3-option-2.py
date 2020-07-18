@@ -7,7 +7,7 @@ chrome_options.add_argument("--disable-extensions")
 chrome_options.add_argument("--disable-gpu")
 chrome_options.add_argument("--no-sandbox")
 
-# If we do end up using this the path will obviously need to be changed, as I do not plan to run a bot off my computer
+# Whatever the script is running on must have Google Chrome installed and webdriver must have permission to run
 driver = webdriver.Chrome('./chromedriver')
 
 url = "https://cstimer.net/"
