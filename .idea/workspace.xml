@@ -19,11 +19,24 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2874eeb2-c228-4395-82da-c928c263199f" name="Default Changelist" comment="" />
+    <list default="true" id="2874eeb2-c228-4395-82da-c928c263199f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chromedriver" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scram-3x3-option-2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/PineCube.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PineCube.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -40,9 +53,58 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="PineCube" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="scram-3x3-option-2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PineCube" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scram-3x3-option-2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.scram-3x3-option-2" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -68,7 +130,7 @@
       <updated>1590111483539</updated>
       <workItem from="1590111489690" duration="33000" />
       <workItem from="1591728901668" duration="855000" />
-      <workItem from="1595054709486" duration="21000" />
+      <workItem from="1595054709486" duration="3024000" />
     </task>
     <task id="LOCAL-00001" summary="Started to work on key">
       <created>1591728985873</created>
@@ -114,9 +176,44 @@
       <screen x="0" y="0" width="1707" height="920" />
     </state>
     <state x="364" y="203" key="FileChooserDialogImpl/0.0.1707.920@0.0.1707.920" timestamp="1590111519564" />
+    <state width="1058" height="197" key="GridCell.Tab.0.bottom" timestamp="1595057271217">
+      <screen x="0" y="23" width="1280" height="728" />
+    </state>
+    <state width="1058" height="197" key="GridCell.Tab.0.bottom/0.23.1280.728@0.23.1280.728" timestamp="1595057271217" />
+    <state width="1058" height="197" key="GridCell.Tab.0.center" timestamp="1595057271216">
+      <screen x="0" y="23" width="1280" height="728" />
+    </state>
+    <state width="1058" height="197" key="GridCell.Tab.0.center/0.23.1280.728@0.23.1280.728" timestamp="1595057271216" />
+    <state width="1058" height="197" key="GridCell.Tab.0.left" timestamp="1595057271216">
+      <screen x="0" y="23" width="1280" height="728" />
+    </state>
+    <state width="1058" height="197" key="GridCell.Tab.0.left/0.23.1280.728@0.23.1280.728" timestamp="1595057271216" />
+    <state width="1058" height="197" key="GridCell.Tab.0.right" timestamp="1595057271216">
+      <screen x="0" y="23" width="1280" height="728" />
+    </state>
+    <state width="1058" height="197" key="GridCell.Tab.0.right/0.23.1280.728@0.23.1280.728" timestamp="1595057271216" />
+    <state width="1058" height="197" key="GridCell.Tab.1.bottom" timestamp="1595057271218">
+      <screen x="0" y="23" width="1280" height="728" />
+    </state>
+    <state width="1058" height="197" key="GridCell.Tab.1.bottom/0.23.1280.728@0.23.1280.728" timestamp="1595057271218" />
+    <state width="1058" height="197" key="GridCell.Tab.1.center" timestamp="1595057271217">
+      <screen x="0" y="23" width="1280" height="728" />
+    </state>
+    <state width="1058" height="197" key="GridCell.Tab.1.center/0.23.1280.728@0.23.1280.728" timestamp="1595057271217" />
+    <state width="1058" height="197" key="GridCell.Tab.1.left" timestamp="1595057271217">
+      <screen x="0" y="23" width="1280" height="728" />
+    </state>
+    <state width="1058" height="197" key="GridCell.Tab.1.left/0.23.1280.728@0.23.1280.728" timestamp="1595057271217" />
+    <state width="1058" height="197" key="GridCell.Tab.1.right" timestamp="1595057271218">
+      <screen x="0" y="23" width="1280" height="728" />
+    </state>
+    <state width="1058" height="197" key="GridCell.Tab.1.right/0.23.1280.728@0.23.1280.728" timestamp="1595057271218" />
     <state x="138" y="23" key="SettingsEditor" timestamp="1595054729704">
       <screen x="0" y="23" width="1280" height="726" />
     </state>
     <state x="138" y="23" key="SettingsEditor/0.23.1280.726@0.23.1280.726" timestamp="1595054729704" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/PineCube$scram_3x3_option_2.coverage" NAME="scram-3x3-option-2 Coverage Results" MODIFIED="1595057259703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
