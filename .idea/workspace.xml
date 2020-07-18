@@ -19,13 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2874eeb2-c228-4395-82da-c928c263199f" name="Default Changelist" comment="Adde">
-      <change afterPath="$PROJECT_DIR$/ToDo.txt" afterDir="false" />
+    <list default="true" id="2874eeb2-c228-4395-82da-c928c263199f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3x3-notation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/3x3-notation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cogs/1st Attempt-Rename Later.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scram-3x3-option-2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/scram-3x3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scram3x3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Archive/scram3x3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToDo.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +54,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Commands" />
+      <recent name="$PROJECT_DIR$/Archive" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -133,7 +135,7 @@
       <workItem from="1591728901668" duration="855000" />
       <workItem from="1595054709486" duration="4102000" />
       <workItem from="1595086104387" duration="283000" />
-      <workItem from="1595110073572" duration="1273000" />
+      <workItem from="1595110073572" duration="1649000" />
     </task>
     <task id="LOCAL-00001" summary="Started to work on key">
       <created>1591728985873</created>
@@ -149,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595058762871</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added ToDo.md and commands directory. Removed Cogs directory.">
+      <created>1595113020294</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1595113020294</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,17 +181,18 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Started to work on key" />
     <MESSAGE value="Added chromedriver, alt scramble solution start." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added chromedriver, alt scramble solution start." />
+    <MESSAGE value="Added ToDo.md and commands directory. Removed Cogs directory." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added ToDo.md and commands directory. Removed Cogs directory." />
   </component>
   <component name="WindowStateProjectService">
     <state x="1355" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1591728915903">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="1355" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.3440.1400@0.0.3440.1400" timestamp="1591728915903" />
-    <state x="240" y="23" key="CommitChangelistDialog2" timestamp="1595110670484">
+    <state x="240" y="23" key="CommitChangelistDialog2" timestamp="1595113020069">
       <screen x="0" y="23" width="1280" height="726" />
     </state>
-    <state x="240" y="23" key="CommitChangelistDialog2/0.23.1280.726@0.23.1280.726" timestamp="1595110670484" />
+    <state x="240" y="23" key="CommitChangelistDialog2/0.23.1280.726@0.23.1280.726" timestamp="1595113020069" />
     <state x="187" y="127" width="2245" height="1001" key="DiffContextDialog" timestamp="1595110664101">
       <screen x="0" y="23" width="1280" height="726" />
     </state>
@@ -245,10 +255,10 @@
     </state>
     <state x="138" y="23" key="SettingsEditor/0.23.1280.726@0.23.1280.726" timestamp="1595054729704" />
     <state x="138" y="23" key="SettingsEditor/0.23.1280.728@0.23.1280.728" timestamp="1595112118489" />
-    <state x="229" y="98" key="Vcs.Push.Dialog.v2" timestamp="1595058765289">
+    <state x="229" y="98" key="Vcs.Push.Dialog.v2" timestamp="1595113022158">
       <screen x="0" y="23" width="1280" height="726" />
     </state>
-    <state x="229" y="98" key="Vcs.Push.Dialog.v2/0.23.1280.726@0.23.1280.726" timestamp="1595058765289" />
+    <state x="229" y="98" key="Vcs.Push.Dialog.v2/0.23.1280.726@0.23.1280.726" timestamp="1595113022158" />
     <state x="322" y="190" key="com.intellij.ide.util.TipDialog" timestamp="1595110073826">
       <screen x="0" y="23" width="1280" height="726" />
     </state>
