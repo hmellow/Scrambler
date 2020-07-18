@@ -19,8 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2874eeb2-c228-4395-82da-c928c263199f" name="Default Changelist" comment="Added imp">
+    <list default="true" id="2874eeb2-c228-4395-82da-c928c263199f" name="Default Changelist" comment="Adde">
+      <change afterPath="$PROJECT_DIR$/ToDo.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3x3-notation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/3x3-notation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cogs/1st Attempt-Rename Later.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scram-3x3-option-2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/scram-3x3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scram3x3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Archive/scram3x3.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +57,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -77,7 +82,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="scram-3x3-option-2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="scram-3x3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PineCube" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -87,7 +92,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scram-3x3-option-2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Commands/scram-3x3.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -128,6 +133,7 @@
       <workItem from="1591728901668" duration="855000" />
       <workItem from="1595054709486" duration="4102000" />
       <workItem from="1595086104387" duration="283000" />
+      <workItem from="1595110073572" duration="1273000" />
     </task>
     <task id="LOCAL-00001" summary="Started to work on key">
       <created>1591728985873</created>
@@ -173,14 +179,15 @@
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="1355" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.3440.1400@0.0.3440.1400" timestamp="1591728915903" />
-    <state x="240" y="23" key="CommitChangelistDialog2" timestamp="1595059734168">
+    <state x="240" y="23" key="CommitChangelistDialog2" timestamp="1595110670484">
       <screen x="0" y="23" width="1280" height="726" />
     </state>
-    <state x="240" y="23" key="CommitChangelistDialog2/0.23.1280.726@0.23.1280.726" timestamp="1595059734168" />
-    <state x="503" y="200" width="2245" height="1001" key="DiffContextDialog" timestamp="1591732157664">
-      <screen x="0" y="0" width="3440" height="1400" />
+    <state x="240" y="23" key="CommitChangelistDialog2/0.23.1280.726@0.23.1280.726" timestamp="1595110670484" />
+    <state x="187" y="127" width="2245" height="1001" key="DiffContextDialog" timestamp="1595110664101">
+      <screen x="0" y="23" width="1280" height="726" />
     </state>
     <state x="503" y="200" width="2245" height="1001" key="DiffContextDialog/0.0.3440.1400@0.0.3440.1400" timestamp="1591732157664" />
+    <state x="187" y="127" key="DiffContextDialog/0.23.1280.726@0.23.1280.726" timestamp="1595110664101" />
     <state x="364" y="203" key="FileChooserDialogImpl" timestamp="1590111519564">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
@@ -233,18 +240,20 @@
     <state width="1058" height="197" key="GridCell.Tab.1.right/0.23.1280.726@0.23.1280.726" timestamp="1595059737952" />
     <state width="1058" height="197" key="GridCell.Tab.1.right/0.23.1280.728@0.23.1280.728" timestamp="1595059372946" />
     <state width="1058" height="197" key="GridCell.Tab.1.right/0.23.1280.729@0.23.1280.729" timestamp="1595059451760" />
-    <state x="138" y="23" key="SettingsEditor" timestamp="1595054729704">
-      <screen x="0" y="23" width="1280" height="726" />
+    <state x="138" y="23" key="SettingsEditor" timestamp="1595112118489">
+      <screen x="0" y="23" width="1280" height="728" />
     </state>
     <state x="138" y="23" key="SettingsEditor/0.23.1280.726@0.23.1280.726" timestamp="1595054729704" />
+    <state x="138" y="23" key="SettingsEditor/0.23.1280.728@0.23.1280.728" timestamp="1595112118489" />
     <state x="229" y="98" key="Vcs.Push.Dialog.v2" timestamp="1595058765289">
       <screen x="0" y="23" width="1280" height="726" />
     </state>
     <state x="229" y="98" key="Vcs.Push.Dialog.v2/0.23.1280.726@0.23.1280.726" timestamp="1595058765289" />
-    <state x="322" y="190" key="com.intellij.ide.util.TipDialog" timestamp="1595086126344">
-      <screen x="0" y="23" width="1280" height="725" />
+    <state x="322" y="190" key="com.intellij.ide.util.TipDialog" timestamp="1595110073826">
+      <screen x="0" y="23" width="1280" height="726" />
     </state>
     <state x="322" y="190" key="com.intellij.ide.util.TipDialog/0.23.1280.725@0.23.1280.725" timestamp="1595086126344" />
+    <state x="322" y="190" key="com.intellij.ide.util.TipDialog/0.23.1280.726@0.23.1280.726" timestamp="1595110073826" />
     <state x="187" y="101" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1595059313449">
       <screen x="0" y="23" width="1280" height="728" />
     </state>
