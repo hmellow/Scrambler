@@ -1,19 +1,11 @@
 import discord
-import secrets
-from discord.ext import commands
-bot = commands.Bot(command_prefix='/')
 
+client = discord.Client()
 
-class MyClient(discord.Client):
-    async def on_ready(self):
-        print('Logged on as {0}!'.format(self.user))
+@client.event
+async def on_ready():
+    print('Logged in as {0.user}'.format(client))
+    await client.change_presence(activity=discord.Game(name="Maintinence."))
 
+client.run('NzAzMDc5MzgzNDcyMjc1NTA4.XqJXsw.5TwV1Gd_oVAWxeMsYe2V7TqGbF8')
 
-    async def on_message(self, message):
-        print('Message from {0.author}: {0.content}'.format(message))
-
-token = secrets.KEY
-
-client = MyClient()
-client.run(token)
-# Startup

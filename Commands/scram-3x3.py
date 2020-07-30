@@ -8,7 +8,7 @@ chrome_options.add_argument("--disable-gpu")
 chrome_options.add_argument("--no-sandbox")
 
 # Whatever the script is running on must have Google Chrome installed and webdriver must have permission to run
-driver = webdriver.Chrome('../chromedriver')
+driver = webdriver.Chrome('./chromedriver')
 
 url = "https://cstimer.net/"
 

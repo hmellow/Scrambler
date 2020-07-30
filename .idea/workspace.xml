@@ -21,12 +21,18 @@
   <component name="ChangeListManager">
     <list default="true" id="2874eeb2-c228-4395-82da-c928c263199f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToDo.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Archive/scram3x3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Archive/scram3x3-old.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commands/scram-3x3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/scram-3x3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="PineCube" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -37,6 +43,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="1cF5QQcLF5lZ7jk8DfQoEyA4jT4" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -61,7 +68,7 @@
       <recent name="$PROJECT_DIR$/Archive" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.bot">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="PineCube" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -84,10 +91,32 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="bot" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PineCube" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bot.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="scram-3x3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PineCube" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -105,7 +134,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.scram-3x3-option-2" />
+        <item itemvalue="Python.bot" />
+        <item itemvalue="Python.scram-3x3" />
       </list>
     </recent_temporary>
   </component>
@@ -135,7 +165,13 @@
       <workItem from="1591728901668" duration="855000" />
       <workItem from="1595054709486" duration="4102000" />
       <workItem from="1595086104387" duration="283000" />
-      <workItem from="1595110073572" duration="1649000" />
+      <workItem from="1595110073572" duration="2595000" />
+      <workItem from="1595117749872" duration="1124000" />
+      <workItem from="1595472736555" duration="1082000" />
+      <workItem from="1595557607740" duration="913000" />
+      <workItem from="1595818456030" duration="826000" />
+      <workItem from="1596138286900" duration="639000" />
+      <workItem from="1596138946681" duration="4705000" />
     </task>
     <task id="LOCAL-00001" summary="Started to work on key">
       <created>1591728985873</created>
@@ -158,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595113020294</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Removed ToDo.md">
+      <created>1595113353298</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1595113353298</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,17 +225,18 @@
     <MESSAGE value="Started to work on key" />
     <MESSAGE value="Added chromedriver, alt scramble solution start." />
     <MESSAGE value="Added ToDo.md and commands directory. Removed Cogs directory." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added ToDo.md and commands directory. Removed Cogs directory." />
+    <MESSAGE value="Removed ToDo.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed ToDo.md" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1355" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1591728915903">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="1355" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.3440.1400@0.0.3440.1400" timestamp="1591728915903" />
-    <state x="240" y="23" key="CommitChangelistDialog2" timestamp="1595113020069">
+    <state x="240" y="23" key="CommitChangelistDialog2" timestamp="1595113353123">
       <screen x="0" y="23" width="1280" height="726" />
     </state>
-    <state x="240" y="23" key="CommitChangelistDialog2/0.23.1280.726@0.23.1280.726" timestamp="1595113020069" />
+    <state x="240" y="23" key="CommitChangelistDialog2/0.23.1280.726@0.23.1280.726" timestamp="1595113353123" />
     <state x="187" y="127" width="2245" height="1001" key="DiffContextDialog" timestamp="1595110664101">
       <screen x="0" y="23" width="1280" height="726" />
     </state>
@@ -250,20 +294,27 @@
     <state width="1058" height="197" key="GridCell.Tab.1.right/0.23.1280.726@0.23.1280.726" timestamp="1595059737952" />
     <state width="1058" height="197" key="GridCell.Tab.1.right/0.23.1280.728@0.23.1280.728" timestamp="1595059372946" />
     <state width="1058" height="197" key="GridCell.Tab.1.right/0.23.1280.729@0.23.1280.729" timestamp="1595059451760" />
-    <state x="138" y="23" key="SettingsEditor" timestamp="1595112118489">
-      <screen x="0" y="23" width="1280" height="728" />
+    <state x="138" y="23" key="SettingsEditor" timestamp="1596138926841">
+      <screen x="0" y="23" width="1280" height="729" />
     </state>
     <state x="138" y="23" key="SettingsEditor/0.23.1280.726@0.23.1280.726" timestamp="1595054729704" />
     <state x="138" y="23" key="SettingsEditor/0.23.1280.728@0.23.1280.728" timestamp="1595112118489" />
-    <state x="229" y="98" key="Vcs.Push.Dialog.v2" timestamp="1595113022158">
+    <state x="138" y="23" key="SettingsEditor/0.23.1280.729@0.23.1280.729" timestamp="1596138926841" />
+    <state x="229" y="98" key="Vcs.Push.Dialog.v2" timestamp="1595113356351">
       <screen x="0" y="23" width="1280" height="726" />
     </state>
-    <state x="229" y="98" key="Vcs.Push.Dialog.v2/0.23.1280.726@0.23.1280.726" timestamp="1595113022158" />
-    <state x="322" y="190" key="com.intellij.ide.util.TipDialog" timestamp="1595110073826">
-      <screen x="0" y="23" width="1280" height="726" />
+    <state x="229" y="98" key="Vcs.Push.Dialog.v2/0.23.1280.726@0.23.1280.726" timestamp="1595113356351" />
+    <state x="322" y="190" key="com.intellij.ide.util.TipDialog" timestamp="1596138946716">
+      <screen x="0" y="23" width="1280" height="729" />
     </state>
     <state x="322" y="190" key="com.intellij.ide.util.TipDialog/0.23.1280.725@0.23.1280.725" timestamp="1595086126344" />
     <state x="322" y="190" key="com.intellij.ide.util.TipDialog/0.23.1280.726@0.23.1280.726" timestamp="1595110073826" />
+    <state x="322" y="190" key="com.intellij.ide.util.TipDialog/0.23.1280.728@0.23.1280.728" timestamp="1595818584191" />
+    <state x="322" y="190" key="com.intellij.ide.util.TipDialog/0.23.1280.729@0.23.1280.729" timestamp="1596138946716" />
+    <state x="429" y="275" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1595557625766">
+      <screen x="0" y="23" width="1280" height="729" />
+    </state>
+    <state x="429" y="275" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1280.729@0.23.1280.729" timestamp="1595557625766" />
     <state x="187" y="101" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1595059313449">
       <screen x="0" y="23" width="1280" height="728" />
     </state>
