@@ -20,8 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2874eeb2-c228-4395-82da-c928c263199f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Google Chrome (alt).app" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Archive/scram3x3-old.py" beforeDir="false" afterPath="$PROJECT_DIR$/Archive/scram3x3-old.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +168,7 @@
       <workItem from="1595557607740" duration="913000" />
       <workItem from="1595818456030" duration="826000" />
       <workItem from="1596138286900" duration="639000" />
-      <workItem from="1596138946681" duration="4950000" />
+      <workItem from="1596138946681" duration="5515000" />
     </task>
     <task id="LOCAL-00001" summary="Started to work on key">
       <created>1591728985873</created>
@@ -205,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596147837262</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="old 3x3 scram changed to txt until operational">
+      <created>1596148094687</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1596148094687</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,18 +238,19 @@
     <MESSAGE value="Added ToDo.md and commands directory. Removed Cogs directory." />
     <MESSAGE value="Removed ToDo.md" />
     <MESSAGE value="Added status and changed old scramble to python file as we may start using it again." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added status and changed old scramble to python file as we may start using it again." />
+    <MESSAGE value="old 3x3 scram changed to txt until operational" />
+    <option name="LAST_COMMIT_MESSAGE" value="old 3x3 scram changed to txt until operational" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1355" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1591728915903">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="1355" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.3440.1400@0.0.3440.1400" timestamp="1591728915903" />
-    <state x="240" y="23" key="CommitChangelistDialog2" timestamp="1596147836978">
+    <state x="240" y="23" key="CommitChangelistDialog2" timestamp="1596148094494">
       <screen x="0" y="23" width="1280" height="729" />
     </state>
     <state x="240" y="23" key="CommitChangelistDialog2/0.23.1280.726@0.23.1280.726" timestamp="1595113353123" />
-    <state x="240" y="23" key="CommitChangelistDialog2/0.23.1280.729@0.23.1280.729" timestamp="1596147836978" />
+    <state x="240" y="23" key="CommitChangelistDialog2/0.23.1280.729@0.23.1280.729" timestamp="1596148094494" />
     <state x="187" y="127" width="2245" height="1001" key="DiffContextDialog" timestamp="1595110664101">
       <screen x="0" y="23" width="1280" height="726" />
     </state>
@@ -306,11 +314,11 @@
     <state x="138" y="23" key="SettingsEditor/0.23.1280.726@0.23.1280.726" timestamp="1595054729704" />
     <state x="138" y="23" key="SettingsEditor/0.23.1280.728@0.23.1280.728" timestamp="1595112118489" />
     <state x="138" y="23" key="SettingsEditor/0.23.1280.729@0.23.1280.729" timestamp="1596138926841" />
-    <state x="229" y="98" key="Vcs.Push.Dialog.v2" timestamp="1596147839469">
+    <state x="229" y="98" key="Vcs.Push.Dialog.v2" timestamp="1596148096210">
       <screen x="0" y="23" width="1280" height="729" />
     </state>
     <state x="229" y="98" key="Vcs.Push.Dialog.v2/0.23.1280.726@0.23.1280.726" timestamp="1595113356351" />
-    <state x="229" y="98" key="Vcs.Push.Dialog.v2/0.23.1280.729@0.23.1280.729" timestamp="1596147839469" />
+    <state x="229" y="98" key="Vcs.Push.Dialog.v2/0.23.1280.729@0.23.1280.729" timestamp="1596148096210" />
     <state x="322" y="190" key="com.intellij.ide.util.TipDialog" timestamp="1596138946716">
       <screen x="0" y="23" width="1280" height="729" />
     </state>
