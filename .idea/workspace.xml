@@ -56,6 +56,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/secrets.py" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
@@ -270,11 +271,11 @@
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="1355" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.3440.1400@0.0.3440.1400" timestamp="1591728915903" />
-    <state x="240" y="23" key="CommitChangelistDialog2" timestamp="1596152752864">
+    <state x="240" y="23" key="CommitChangelistDialog2" timestamp="1596153480271">
       <screen x="0" y="23" width="1280" height="729" />
     </state>
     <state x="240" y="23" key="CommitChangelistDialog2/0.23.1280.726@0.23.1280.726" timestamp="1595113353123" />
-    <state x="240" y="23" key="CommitChangelistDialog2/0.23.1280.729@0.23.1280.729" timestamp="1596152752864" />
+    <state x="240" y="23" key="CommitChangelistDialog2/0.23.1280.729@0.23.1280.729" timestamp="1596153480271" />
     <state x="187" y="127" width="2245" height="1001" key="DiffContextDialog" timestamp="1595110664101">
       <screen x="0" y="23" width="1280" height="726" />
     </state>
@@ -338,11 +339,11 @@
     <state x="138" y="23" key="SettingsEditor/0.23.1280.726@0.23.1280.726" timestamp="1595054729704" />
     <state x="138" y="23" key="SettingsEditor/0.23.1280.728@0.23.1280.728" timestamp="1595112118489" />
     <state x="138" y="23" key="SettingsEditor/0.23.1280.729@0.23.1280.729" timestamp="1596138926841" />
-    <state x="229" y="98" key="Vcs.Push.Dialog.v2" timestamp="1596152754440">
+    <state x="229" y="98" key="Vcs.Push.Dialog.v2" timestamp="1596153481745">
       <screen x="0" y="23" width="1280" height="729" />
     </state>
     <state x="229" y="98" key="Vcs.Push.Dialog.v2/0.23.1280.726@0.23.1280.726" timestamp="1595113356351" />
-    <state x="229" y="98" key="Vcs.Push.Dialog.v2/0.23.1280.729@0.23.1280.729" timestamp="1596152754440" />
+    <state x="229" y="98" key="Vcs.Push.Dialog.v2/0.23.1280.729@0.23.1280.729" timestamp="1596153481745" />
     <state x="322" y="190" key="com.intellij.ide.util.TipDialog" timestamp="1596138946716">
       <screen x="0" y="23" width="1280" height="729" />
     </state>
