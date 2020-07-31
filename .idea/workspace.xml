@@ -20,8 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2874eeb2-c228-4395-82da-c928c263199f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/secrets.py" beforeDir="false" afterPath="$PROJECT_DIR$/secrets.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +169,7 @@
       <workItem from="1595557607740" duration="913000" />
       <workItem from="1595818456030" duration="826000" />
       <workItem from="1596138286900" duration="639000" />
-      <workItem from="1596138946681" duration="9587000" />
+      <workItem from="1596138946681" duration="10178000" />
     </task>
     <task id="LOCAL-00001" summary="Started to work on key">
       <created>1591728985873</created>
@@ -234,7 +234,21 @@
       <option name="project" value="LOCAL" />
       <updated>1596152753017</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Test GitHub Secret">
+      <created>1596153480396</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1596153480396</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Finished token security.">
+      <created>1596153615893</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1596153615893</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,18 +278,20 @@
     <MESSAGE value="Google Chrome app added." />
     <MESSAGE value="Added embed reference." />
     <MESSAGE value="Added content to embed-reference.txt." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added content to embed-reference.txt." />
+    <MESSAGE value="Test GitHub Secret" />
+    <MESSAGE value="Finished token security." />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished token security." />
   </component>
   <component name="WindowStateProjectService">
     <state x="1355" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1591728915903">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="1355" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.3440.1400@0.0.3440.1400" timestamp="1591728915903" />
-    <state x="240" y="23" key="CommitChangelistDialog2" timestamp="1596153480271">
+    <state x="240" y="23" key="CommitChangelistDialog2" timestamp="1596153615769">
       <screen x="0" y="23" width="1280" height="729" />
     </state>
     <state x="240" y="23" key="CommitChangelistDialog2/0.23.1280.726@0.23.1280.726" timestamp="1595113353123" />
-    <state x="240" y="23" key="CommitChangelistDialog2/0.23.1280.729@0.23.1280.729" timestamp="1596153480271" />
+    <state x="240" y="23" key="CommitChangelistDialog2/0.23.1280.729@0.23.1280.729" timestamp="1596153615769" />
     <state x="187" y="127" width="2245" height="1001" key="DiffContextDialog" timestamp="1595110664101">
       <screen x="0" y="23" width="1280" height="726" />
     </state>
@@ -339,11 +355,11 @@
     <state x="138" y="23" key="SettingsEditor/0.23.1280.726@0.23.1280.726" timestamp="1595054729704" />
     <state x="138" y="23" key="SettingsEditor/0.23.1280.728@0.23.1280.728" timestamp="1595112118489" />
     <state x="138" y="23" key="SettingsEditor/0.23.1280.729@0.23.1280.729" timestamp="1596138926841" />
-    <state x="229" y="98" key="Vcs.Push.Dialog.v2" timestamp="1596153481745">
+    <state x="229" y="98" key="Vcs.Push.Dialog.v2" timestamp="1596153617077">
       <screen x="0" y="23" width="1280" height="729" />
     </state>
     <state x="229" y="98" key="Vcs.Push.Dialog.v2/0.23.1280.726@0.23.1280.726" timestamp="1595113356351" />
-    <state x="229" y="98" key="Vcs.Push.Dialog.v2/0.23.1280.729@0.23.1280.729" timestamp="1596153481745" />
+    <state x="229" y="98" key="Vcs.Push.Dialog.v2/0.23.1280.729@0.23.1280.729" timestamp="1596153617077" />
     <state x="322" y="190" key="com.intellij.ide.util.TipDialog" timestamp="1596138946716">
       <screen x="0" y="23" width="1280" height="729" />
     </state>
