@@ -2,7 +2,7 @@ import discord
 from discord.ext import commands
 
 
-class notation(commands.Cog):
+class Notation(commands.Cog):
     def __init__(self, client: commands.Bot):
         self.client = client
 
@@ -139,4 +139,4 @@ class notation(commands.Cog):
 
 
 def setup(client: commands.Bot):
-    client.add_cog(notation(client))
+    client.add_cog(Notation(client))
