@@ -119,6 +119,24 @@ class notation(commands.Cog):
         rin.set_footer(text='View from front face.')
         await ctx.send(embed=rin)
 
+    @commands.command(
+        name="Net",
+        description="Unfolded version of the cube used in images.",
+        aliases=['net', 'NET', 'unfold', 'UNFOLD', 'Unfold']
+    )
+    @commands.guild_only()
+    async def net(self, ctx: commands.Context):
+        netm = discord.Embed(title="Net", color=0xADFF2F)
+        netm.add_field(name="Right", value="Blue", inline=True)
+        netm.add_field(name="Left", value="Green", inline=True)
+        netm.add_field(name="Front", value="Red", inline=True)
+        netm.add_field(name="Back", value="Orange", inline=True)
+        netm.add_field(name="Top (Up)", value="White", inline=True)
+        netm.add_field(name="Bottom (Down)", value="Yellow", inline=True)
+        netm.set_image(
+            url="https://cdn.discordapp.com/attachments/738890956912459777/738955476439662632/Cube_Net-Labeled.png")
+        await ctx.send(embed=netm)
+
 
 def setup(client: commands.Bot):
     client.add_cog(notation(client))

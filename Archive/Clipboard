@@ -1,6 +1,0 @@
-Up = discord.Embed(title="Up", color=0xADFF2F)
-    Up.add_field(name="Action", value="Rotate top face 90 degrees clockwise.", inline=False)
-    Up.set_thumbnail(url="https://cdn.discordapp.com/attachments/738527822473068604/738821000011186296/U.png")
-    Up.set_footer(text='Notation')
-    channel = client.get_channel(703071528882929748)
-    await channel.send(embed=reference_embed)
