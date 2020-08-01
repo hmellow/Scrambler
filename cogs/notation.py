@@ -71,9 +71,25 @@ class notation(commands.Cog):
     async def left(self, ctx: commands.Context):
         left = discord.Embed(title="Left", color=0xADFF2F)
         left.add_field(name="Action", value="Rotate left face 90 degrees clockwise.", inline=False)
-        left.set_thumbnail(url="url=https://cdn.discordapp.com/attachments/738890956912459777/738891015217217616/L-Notation-Colored.png")
+        left.set_thumbnail(
+            url="url=https://cdn.discordapp.com/attachments/738890956912459777/738891015217217616/L-Notation-Colored"
+                ".png")
         left.set_footer(text='View from front face.')
         await ctx.send(embed=left)
+
+    @commands.command(
+        name="L'",
+        description='Notation command',
+        aliases=[]
+    )
+    @commands.guild_only()
+    async def leftinverted(self, ctx: commands.Context):
+        linv = discord.Embed(title="Left Inverted", color=0xADFF2F)
+        linv.add_field(name="Action", value="Rotate left face 90 degrees anticlockwise.", inline=False)
+        linv.set_thumbnail(
+            url="https://cdn.discordapp.com/attachments/738890956912459777/738891016752332840/L-Notation-Colored.png")
+        linv.set_footer(text='View from front face.')
+        await ctx.send(embed=linv)
 
 
 def setup(client: commands.Bot):
