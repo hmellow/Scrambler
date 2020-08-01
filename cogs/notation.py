@@ -15,7 +15,8 @@ class notation(commands.Cog):
     async def up(self, ctx: commands.Context):
         up = discord.Embed(title="Up", color=0xADFF2F)
         up.add_field(name="Action", value="Rotate top face 90 degrees clockwise.", inline=False)
-        up.set_thumbnail(url="https://cdn.discordapp.com/attachments/738890956912459777/738891020862881819/U-Notation-Colored.png")
+        up.set_thumbnail(
+            url="https://cdn.discordapp.com/attachments/738890956912459777/738891020862881819/U-Notation-Colored.png")
         up.set_footer(text='View from front face.')
         await ctx.send(embed=up)
 
@@ -32,6 +33,20 @@ class notation(commands.Cog):
             url="https://cdn.discordapp.com/attachments/738890956912459777/738891022636941394/U-Notation-Colored.png")
         upr.set_footer(text='View from front face.')
         await ctx.send(embed=upr)
+
+    @commands.command(
+        name='D',
+        description='Notation command.',
+        aliases=['down', 'Down', 'DOWN']
+    )
+    @commands.guild_only()
+    async def down(self, ctx: commands.Context):
+        down = discord.Embed(title="Down", color=0xADFF2F)
+        down.add_field(name="Action", value="Rotate bottom face 90 degrees clockwise.", inline=False)
+        down.set_thumbnail(
+            url="https://cdn.discordapp.com/attachments/738890956912459777/738891012549902356/D-Notation-Colored.png")
+        down.set_footer(text='View from front face.')
+        await ctx.send(embed=down)
 
 
 def setup(client: commands.Bot):
