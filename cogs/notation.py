@@ -23,7 +23,7 @@ class notation(commands.Cog):
     @commands.command(
         name="U'",
         description='Notation command.',
-        aliases=[""]
+        aliases=[]
     )
     @commands.guild_only()
     async def upinverted(self, ctx: commands.Context):
@@ -47,6 +47,20 @@ class notation(commands.Cog):
             url="https://cdn.discordapp.com/attachments/738890956912459777/738891012549902356/D-Notation-Colored.png")
         down.set_footer(text='View from front face.')
         await ctx.send(embed=down)
+
+    @commands.command(
+        name="D'",
+        description='Notation command.',
+        aliases=[]
+    )
+    @commands.guild_only()
+    async def downinverted(self, ctx: commands.Context):
+        din = discord.Embed(title="Down Inverted", color=0xADFF2F)
+        din.add_field(name="Action", value="Rotate bottom face 90 degrees anticlockwise.", inline=False)
+        din.set_thumbnail(
+            url="https://cdn.discordapp.com/attachments/738890956912459777/738891014093406288/D-Notation-Colored.png")
+        din.set_footer(text='View from front face.')
+        await ctx.send(embed=din)
 
 
 def setup(client: commands.Bot):
