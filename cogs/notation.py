@@ -94,7 +94,7 @@ class notation(commands.Cog):
     @commands.command(
         name='R',
         description='Notation command',
-        aliases=[Right, right, RIGHT]
+        aliases=['Right', 'right', 'RIGHT']
     )
     @commands.guild_only()
     async def right(self, ctx: commands.Context):
@@ -104,6 +104,20 @@ class notation(commands.Cog):
             url="https://cdn.discordapp.com/attachments/738890956912459777/738891018035921026/R-Notation-Colored.png")
         rgt.set_footer(text='View from front face.')
         await ctx.send(embed=rgt)
+
+    @commands.command(
+        name="R'",
+        description='Notation command',
+        aliases=[]
+    )
+    @commands.guild_only()
+    async def rightinverted(self, ctx: commands.Context):
+        rin = discord.Embed(title="Right", color=0xADFF2F)
+        rin.add_field(name="Action", value="Rotate right face 90 degrees anticlockwise.", inline=False)
+        rin.set_thumbnail(
+            url="https://cdn.discordapp.com/attachments/738890956912459777/738891019508121701/R-Notation-Colored.png")
+        rin.set_footer(text='View from front face.')
+        await ctx.send(embed=rin)
 
 
 def setup(client: commands.Bot):
