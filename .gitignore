@@ -1,5 +1,6 @@
 secrets.py
 .DS_Store
+.idea
 .idea/.idea.PineCube.dir/venv/bin/
 .idea/.idea.PineCube.dir/venv/include/
 .idea/.idea.PineCube.dir/venv/lib/python3.6/site-packages/__pycache__/
@@ -36,3 +37,13 @@ secrets.py
 .idea/.idea.PineCube.dir/venv/lib/python3.6/site-packages/urllib3/util/__pycache__/
 .idea/.idea.PineCube.dir/venv/pyvenv.cfg
 __pycache__/
+Archive/Notation Images/Folded/Colored/D'-Notation-Colored.png
+Archive/Notation Images/Folded/Colored/D-Notation-Colored.png
+Archive/Notation Images/Folded/Colored/L'-Notation-Colored.png
+Archive/Notation Images/Folded/Colored/L-Notation-Colored.png
+Archive/Notation Images/Folded/Colored/R'-Notation-Colored.png
+Archive/Notation Images/Folded/Colored/R-Notation-Colored.png
+Archive/Notation Images/Folded/Colored/U'-Notation-Colored.png
+Archive/Notation Images/Folded/Colored/U-Notation-Colored.png
+Archive/Notation Images/Folded/No Color/
+Archive/Notation Images/Nets/
