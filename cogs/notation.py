@@ -138,9 +138,9 @@ class Notation(commands.Cog):
         await ctx.send(embed=netm)
 
     @commands.command(
-        name="M",
+        name="E",
         description="Notation command.",
-        aliases=['m', 'middle', 'Middle', 'MIDDLE']
+        aliases=['e']
     )
     @commands.guild_only()
     async def middle(self, ctx: commands.Context):
@@ -154,9 +154,9 @@ class Notation(commands.Cog):
         await ctx.send(embed=mnot)
 
     @commands.command(
-        name="M'",
+        name="E'",
         description="Notation command.",
-        aliases=["m'"]
+        aliases=["e'"]
     )
     @commands.guild_only()
     async def midinv(self, ctx: commands.Context):
