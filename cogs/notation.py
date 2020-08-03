@@ -143,8 +143,8 @@ class Notation(commands.Cog):
         aliases=['e']
     )
     @commands.guild_only()
-    async def middle(self, ctx: commands.Context):
-        mnot = discord.Embed(title="Middle", color=0xADFF2F)
+    async def emid(self, ctx: commands.Context):
+        mnot = discord.Embed(title="Horizontal Slice", color=0xADFF2F)
         mnot.add_field(name="Action",
                        value="Rotate the horizontal middle section of the cube 90 degrees to the right.", inline=False)
         mnot.add_field(name="Acknowledgements", value="Slice move.", inline=False)
@@ -159,15 +159,47 @@ class Notation(commands.Cog):
         aliases=["e'"]
     )
     @commands.guild_only()
-    async def midinv(self, ctx: commands.Context):
-        mpr = discord.Embed(title="Middle Inverted", color=0xADFF2F)
+    async def emidinv(self, ctx: commands.Context):
+        mpr = discord.Embed(title="Horizontal Slice Inverted", color=0xADFF2F)
         mpr.add_field(name="Action",
-                        value="Rotate the horizontal middle section of the cube 90 degrees to the left.", inline=False)
+                      value="Rotate the horizontal middle section of the cube 90 degrees to the left.", inline=False)
         mpr.add_field(name="Acknowledgements", value="Slice move.", inline=False)
         mpr.set_thumbnail(
             url="https://cdn.discordapp.com/attachments/738890956912459777/739892527494332426/E-Notation-Colored.png")
         mpr.set_footer(text='View from front face.')
         await ctx.send(embed=mpr)
+
+    @commands.command(
+        name="M",
+        description="Notation command.",
+        aliases=["m"]
+    )
+    @commands.guild_only()
+    async def mid(self, ctx: commands.Context):
+        ems = discord.Embed(title="Vertical Slice", color=0xADFF2F)
+        ems.add_field(name="Action",
+                      value="Rotate the vertical middle section of the cube 90 degrees down.", inline=False)
+        ems.add_field(name="Acknowledgements", value="Slice move.", inline=False)
+        ems.set_thumbnail(url="https://cdn.discordapp.com/attachments/738890956912459777/739892524235358288/M"
+                              "-Notation-Colored.png")
+        ems.set_footer(text='View from front face.')
+        await ctx.send(embed=ems)
+
+    @commands.command(
+        name="M'",
+        description="Notation command.",
+        aliases=["m'"]
+    )
+    @commands.guild_only()
+    async def invertmid(self, ctx: commands.Context):
+        ein = discord.Embed(title="Vertical Slice Inverted", color=0xADFF2F)
+        ein.add_field(name="Action",
+                      value="Rotate the vertical middle section of the cube 90 degrees up.", inline=False)
+        ein.add_field(name="Acknowledgements", value="Slice move.", inline=False)
+        ein.set_thumbnail(
+            url="https://cdn.discordapp.com/attachments/738890956912459777/739892528656154734/M-Notation-Colored.png")
+        ein.set_footer(text='View from front face.')
+        await ctx.send(embed=ein)
 
 
 def setup(client: commands.Bot):
