@@ -112,7 +112,7 @@ class Notation(commands.Cog):
     )
     @commands.guild_only()
     async def rightinverted(self, ctx: commands.Context):
-        rin = discord.Embed(title="Right", color=0xADFF2F)
+        rin = discord.Embed(title="Right Inverted", color=0xADFF2F)
         rin.add_field(name="Action", value="Rotate right face 90 degrees anticlockwise.", inline=False)
         rin.set_thumbnail(
             url="https://cdn.discordapp.com/attachments/738890956912459777/738891019508121701/R-Notation-Colored.png")
@@ -136,6 +136,38 @@ class Notation(commands.Cog):
         netm.set_image(
             url="https://cdn.discordapp.com/attachments/738890956912459777/738955476439662632/Cube_Net-Labeled.png")
         await ctx.send(embed=netm)
+
+    @commands.command(
+        name="M",
+        description="Notation command.",
+        aliases=['m', 'middle', 'Middle', 'MIDDLE']
+    )
+    @commands.guild_only()
+    async def middle(self, ctx: commands.Context):
+        mnot = discord.Embed(title="Middle", color=0xADFF2F)
+        mnot.add_field(name="Action",
+                       value="Rotate the horizontal middle section of the cube 90 degrees to the right.", inline=False)
+        mnot.add_field(name="Acknowledgements", value="Slice move.", inline=False)
+        mnot.set_thumbnail(
+          url="https://cdn.discordapp.com/attachments/738890956912459777/739892528521805986/E-Notation-Colored.png")
+        mnot.set_footer(text='View from front face.')
+        await ctx.send(embed=mnot)
+
+    @commands.command(
+        name="M'",
+        description="Notation command.",
+        aliases=["m'"]
+    )
+    @commands.guild_only()
+    async def midinv(self, ctx: commands.Context):
+        mpr = discord.Embed(title="Middle Inverted", color=0xADFF2F)
+        mpr.add_field(name="Action",
+                        value="Rotate the horizontal middle section of the cube 90 degrees to the left.", inline=False)
+        mpr.add_field(name="Acknowledgements", value="Slice move.", inline=False)
+        mpr.set_thumbnail(
+            url="https://cdn.discordapp.com/attachments/738890956912459777/739892527494332426/E-Notation-Colored.png")
+        mpr.set_footer(text='View from front face.')
+        await ctx.send(embed=mpr)
 
 
 def setup(client: commands.Bot):
