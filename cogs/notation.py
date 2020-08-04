@@ -291,6 +291,21 @@ class Notation(commands.Cog):
         rain.set_footer(text="View from front face.")
         await ctx.send(embed=rain)
 
+    @commands.command(
+        name="l",
+        description="Notation command.",
+        aliases=[]
+    )
+    @commands.guild_only()
+    async def laul(self, ctx: commands.Context):
+        lanm = discord.Embed(title="Double Layer Left", color=0xADFF2F)
+        lanm.add_field(name="Action", value="Rotate left two layers 90 degrees clockwise.", inline=False)
+        lanm.add_field(name="Acknowledgements", value="Double layer move.", inline=False)
+        lanm.set_thumbnail(
+            url="https://cdn.discordapp.com/attachments/738890956912459777/739926791866548324/ld-notation-colored.png")
+        lanm.set_footer(text="View from front face.")
+        await ctx.send(embed=lanm)
+
 
 def setup(client: commands.Bot):
     client.add_cog(Notation(client))
