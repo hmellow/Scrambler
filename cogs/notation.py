@@ -236,11 +236,11 @@ class Notation(commands.Cog):
         description="Notation command.",
         aliases=[]
     )
-    @commands.guild_only
+    @commands.guild_only()
     async def dldow(self, ctx: commands.Context):
         dwn = discord.Embed(title="Double Layer Down", color=0xADFF2F)
-        dwn.add_field(title="Action", value="Rotate bottom two layers 90 degrees clockwise", inline=False)
-        dwn.add_field(title="Acknowledgements", value="Double layer move.", inline=False)
+        dwn.add_field(name="Action", value="Rotate bottom two layers 90 degrees clockwise", inline=False)
+        dwn.add_field(name="Acknowledgements", value="Double layer move.", inline=False)
         dwn.set_thumbnail(
             url="https://cdn.discordapp.com/attachments/738890956912459777/739926790570770582/dd-notation-colored.png")
         dwn.set_footer(text="View from front face.")
