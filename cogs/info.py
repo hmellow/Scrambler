@@ -8,7 +8,6 @@ class Info(commands.Cog):
 
     @commands.command(
         name="ping",
-        description="Shows bot latency.",
         aliases=['latency, Ping, Latency']
     )
     @commands.guild_only()
@@ -17,7 +16,6 @@ class Info(commands.Cog):
 
     @commands.command(
         name="invite",
-        description="Sends invite of the PineCube server.",
         aliases=['Invite']
     )
     @commands.guild_only()

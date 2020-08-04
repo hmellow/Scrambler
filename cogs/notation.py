@@ -8,7 +8,6 @@ class Notation(commands.Cog):
 
     @commands.command(
         name='Up',
-        description='Notation command.',
         aliases=['up', 'UP', 'uP', 'U']
     )
     @commands.guild_only()
@@ -22,7 +21,6 @@ class Notation(commands.Cog):
 
     @commands.command(
         name="U'",
-        description='Notation command.',
         aliases=[]
     )
     @commands.guild_only()
@@ -36,7 +34,6 @@ class Notation(commands.Cog):
 
     @commands.command(
         name='D',
-        description='Notation command.',
         aliases=['down', 'Down', 'DOWN']
     )
     @commands.guild_only()
@@ -50,7 +47,6 @@ class Notation(commands.Cog):
 
     @commands.command(
         name="D'",
-        description='Notation command.',
         aliases=[]
     )
     @commands.guild_only()
@@ -64,7 +60,6 @@ class Notation(commands.Cog):
 
     @commands.command(
         name="L",
-        description='Notation command.',
         aliases=['Left, left, LEFT']
     )
     @commands.guild_only()
@@ -72,14 +67,12 @@ class Notation(commands.Cog):
         left = discord.Embed(title="Left", color=0xADFF2F)
         left.add_field(name="Action", value="Rotate left face 90 degrees clockwise.", inline=False)
         left.set_thumbnail(
-            url="url=https://cdn.discordapp.com/attachments/738890956912459777/738891015217217616/L-Notation-Colored"
-                ".png")
+            url="https://cdn.discordapp.com/attachments/738890956912459777/738891015217217616/L-Notation-Colored.png")
         left.set_footer(text='View from front face.')
         await ctx.send(embed=left)
 
     @commands.command(
         name="L'",
-        description='Notation command.',
         aliases=[]
     )
     @commands.guild_only()
@@ -93,7 +86,6 @@ class Notation(commands.Cog):
 
     @commands.command(
         name='R',
-        description='Notation command',
         aliases=['Right', 'right', 'RIGHT']
     )
     @commands.guild_only()
@@ -121,7 +113,6 @@ class Notation(commands.Cog):
 
     @commands.command(
         name="Net",
-        description="Unfolded version of the cube used in images.",
         aliases=['net', 'NET', 'unfold', 'UNFOLD', 'Unfold']
     )
     @commands.guild_only()
@@ -139,7 +130,6 @@ class Notation(commands.Cog):
 
     @commands.command(
         name="E",
-        description="Notation command.",
         aliases=['e']
     )
     @commands.guild_only()
@@ -155,7 +145,6 @@ class Notation(commands.Cog):
 
     @commands.command(
         name="E'",
-        description="Notation command.",
         aliases=["e'"]
     )
     @commands.guild_only()
@@ -171,7 +160,6 @@ class Notation(commands.Cog):
 
     @commands.command(
         name="M",
-        description="Notation command.",
         aliases=["m"]
     )
     @commands.guild_only()
@@ -187,7 +175,6 @@ class Notation(commands.Cog):
 
     @commands.command(
         name="M'",
-        description="Notation command.",
         aliases=["m'"]
     )
     @commands.guild_only()
@@ -203,7 +190,6 @@ class Notation(commands.Cog):
 
     @commands.command(
         name="u",
-        description="Notation command.",
         aliases=[]
     )
     @commands.guild_only()
@@ -218,7 +204,6 @@ class Notation(commands.Cog):
 
     @commands.command(
         name="u'",
-        description="Notation command.",
         aliases=[]
     )
     @commands.guild_only()
@@ -233,7 +218,6 @@ class Notation(commands.Cog):
 
     @commands.command(
         name="d",
-        description="Notation command.",
         aliases=[]
     )
     @commands.guild_only()
@@ -248,7 +232,6 @@ class Notation(commands.Cog):
 
     @commands.command(
         name="d'",
-        description="Notation command.",
         aliases=[]
     )
     @commands.guild_only()
@@ -263,7 +246,6 @@ class Notation(commands.Cog):
 
     @commands.command(
         name="r",
-        description="Notation command.",
         aliases=[]
     )
     @commands.guild_only()
@@ -278,7 +260,6 @@ class Notation(commands.Cog):
 
     @commands.command(
         name="r'",
-        description="Notation command.",
         aliases=[]
     )
     @commands.guild_only()
@@ -293,7 +274,6 @@ class Notation(commands.Cog):
 
     @commands.command(
         name="l",
-        description="Notation command.",
         aliases=[]
     )
     @commands.guild_only()
@@ -308,7 +288,6 @@ class Notation(commands.Cog):
 
     @commands.command(
         name="l'",
-        description="Notation command.",
         aliases=[]
     )
     @commands.guild_only()
