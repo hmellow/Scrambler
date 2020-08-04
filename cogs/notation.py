@@ -258,7 +258,7 @@ class Notation(commands.Cog):
         ddinv.add_field(name="Acknowledgements", value="Double layer move.", inline=False)
         ddinv.set_thumbnail(
             url="https://cdn.discordapp.com/attachments/738890956912459777/739926786095317093/dd-notation-colored.png")
-        ddinv.set_footer(text-"View from front face.")
+        ddinv.set_footer(text="View from front face.")
         await ctx.send(embed=ddinv)
 
 def setup(client: commands.Bot):
