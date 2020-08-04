@@ -207,7 +207,7 @@ class Notation(commands.Cog):
         aliases=[]
     )
     @commands.guild_only()
-    async def doubleu(self, ctx: commands.Context):
+    async def doblu(self, ctx: commands.Context):
         debu = discord.Embed(title="Double Layer Up", color=0xADFF2F)
         debu.add_field(name="Action", value="Rotate top two layers 90 degrees clockwise", inline=False)
         debu.add_field(name="Acknowledgements", value="Double layer move.", inline=False)
@@ -252,7 +252,7 @@ class Notation(commands.Cog):
         aliases=[]
     )
     @commands.guild_only()
-    async def ddinv(self, ctx: commands.Context):
+    async def ddddinv(self, ctx: commands.Context):
         ddinv = discord.Embed(title="Double Layer Down Inverted", color=0xADFF2F)
         ddinv.add_field(name="Action", value="Rotate bottom two layers 90 degrees anticlockwise.", inline=False)
         ddinv.add_field(name="Acknowledgements", value="Double layer move.", inline=False)
@@ -260,6 +260,22 @@ class Notation(commands.Cog):
             url="https://cdn.discordapp.com/attachments/738890956912459777/739926786095317093/dd-notation-colored.png")
         ddinv.set_footer(text="View from front face.")
         await ctx.send(embed=ddinv)
+
+    @commands.command(
+        name="r",
+        description="Notation command.",
+        aliases=[]
+    )
+    @commands.guild_only()
+    async def rar(self, ctx: commands.Context):
+        rar = discord.Embed(title="Double Layer Right", color=0xADFF2F)
+        rar.add_field(name="Action", value="Rotate right two layers 90 degrees clockwise.", inline=False)
+        rar.add_field(name="Acknowledgements", value="Double layer move.", inline=False)
+        rar.set_thumbnail(
+            url="https://cdn.discordapp.com/attachments/738890956912459777/739926784534904852/rd-notation-colored.png")
+        rar.set_footer(text="View from front face.")
+        await ctx.send(embed=rar)
+
 
 def setup(client: commands.Bot):
     client.add_cog(Notation(client))
