@@ -246,6 +246,20 @@ class Notation(commands.Cog):
         dwn.set_footer(text="View from front face.")
         await ctx.send(embed=dwn)
 
+    @commands.command(
+        name="d'",
+        description="Notation command.",
+        aliases=[]
+    )
+    @commands.guild_only()
+    async def ddinv(self, ctx: commands.Context):
+        ddinv = discord.Embed(title="Double Layer Down Inverted", color=0xADFF2F)
+        ddinv.add_field(name="Action", value="Rotate bottom two layers 90 degrees anticlockwise.", inline=False)
+        ddinv.add_field(name="Acknowledgements", value="Double layer move.", inline=False)
+        ddinv.set_thumbnail(
+            url="https://cdn.discordapp.com/attachments/738890956912459777/739926786095317093/dd-notation-colored.png")
+        ddinv.set_footer(text-"View from front face.")
+        await ctx.send(embed=ddinv)
 
 def setup(client: commands.Bot):
     client.add_cog(Notation(client))
