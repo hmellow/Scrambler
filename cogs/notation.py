@@ -252,7 +252,7 @@ class Notation(commands.Cog):
         aliases=[]
     )
     @commands.guild_only()
-    async def ddddinv(self, ctx: commands.Context):
+    async def dddinv(self, ctx: commands.Context):
         ddinv = discord.Embed(title="Double Layer Down Inverted", color=0xADFF2F)
         ddinv.add_field(name="Action", value="Rotate bottom two layers 90 degrees anticlockwise.", inline=False)
         ddinv.add_field(name="Acknowledgements", value="Double layer move.", inline=False)
@@ -275,6 +275,21 @@ class Notation(commands.Cog):
             url="https://cdn.discordapp.com/attachments/738890956912459777/739926784534904852/rd-notation-colored.png")
         rar.set_footer(text="View from front face.")
         await ctx.send(embed=rar)
+
+    @commands.command(
+        name="r'",
+        description="Notation command.",
+        aliases=[]
+    )
+    @commands.guild_only()
+    async def rainv(self, ctx: commands.Context):
+        rain = discord.Embed(title="Double Layer Right Inverted", color=0xADFF2F)
+        rain.add_field(name="Action", value="Rotate right two layers 90 degrees anticlockwise.", inline=False)
+        rain.add_field(name="Acknowledgements", value="Double layer move.", inline=False)
+        rain.set_thumbnail(
+            url="https://cdn.discordapp.com/attachments/738890956912459777/739926787454402560/rd-notation-colored.png")
+        rain.set_footer(text="View from front face.")
+        await ctx.send(embed=rain)
 
 
 def setup(client: commands.Bot):
