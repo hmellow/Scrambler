@@ -201,6 +201,36 @@ class Notation(commands.Cog):
         ein.set_footer(text='View from front face.')
         await ctx.send(embed=ein)
 
+    @commands.command(
+        name="u",
+        description="Notation command.",
+        aliases=[]
+    )
+    @commands.guild_only()
+    async def doubleu(self, ctx: commands.Context):
+        debu = discord.Embed(title="Double Layer Up", color=0xADFF2F)
+        debu.add_field(name="Action", value="Rotate top two layers 90 degrees clockwise", inline=False)
+        debu.add_field(name="Acknowledgements", value="Double layer move.", inline=False)
+        debu.set_thumbnail(
+            url="https://cdn.discordapp.com/attachments/738890956912459777/739926781548691566/ud-notation-colored.png")
+        debu.set_footer(text='View from front face.')
+        await ctx.send(embed=debu)
+
+    @commands.command(
+        name="u'",
+        description="Notation command.",
+        aliases=[]
+    )
+    @commands.guild_only()
+    async def indu(self, ctx: commands.Context):
+        indu = discord.Embed(title="Double Layer Up Inverted", color=0xADFF2F)
+        indu.add_field(name="Action", value="Rotate top two layers 90 degrees anticlockwise", inline=False)
+        indu.add_field(name="Acknowledgements", value="Double layer move.", inline=False)
+        indu.set_thumbnail(
+            url="https://cdn.discordapp.com/attachments/738890956912459777/739926788976934944/ud-notation-colored.png")
+        indu.set_footer(text='View from front face.')
+        await ctx.send(embed=indu)
+
 
 def setup(client: commands.Bot):
     client.add_cog(Notation(client))
