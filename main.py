@@ -13,7 +13,7 @@ async def on_ready():
     print('Logged in as {0.user}'.format(client))
     await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="squares move"))
     print(f"Currently in {len(list(client.guilds))} guilds.")
-
+    
 
 if __name__ == '__main__':
     for file in os.listdir("cogs"):

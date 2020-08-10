@@ -2,6 +2,10 @@ from discord.ext import commands
 import random
 
 
+def convert(lizt):
+    return ' '.join(lizt)
+
+
 class Scrambles(commands.Cog):
     def __init__(self, client: commands.Bot):
         self.client = client
@@ -15,10 +19,6 @@ class Scrambles(commands.Cog):
         moves = (('U', 'D'), ('F', 'B'), ('R', 'L'))
         directions = ('', "'", '2')
         scramble_length = random.randint(17, 25)
-
-        def convert(lizt):
-
-            return ' '.join(lizt)
 
         def group_find(move):
             temp = moves[0]
