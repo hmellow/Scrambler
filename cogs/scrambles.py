@@ -17,7 +17,7 @@ class Scrambles(commands.Cog):
         scram.scram()
         scram.convert()
 
-        s3 = "**" + convert(scram.scramble) + "**"
+        s3 = "**" + scram + "**"
 
         await ctx.send(s3)
 
