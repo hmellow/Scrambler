@@ -1,4 +1,3 @@
-import discord
 from discord.ext import commands
 
 
@@ -12,7 +11,7 @@ class Info(commands.Cog):
     )
     @commands.guild_only()
     async def ping(self, ctx: commands.Context):
-        await ctx.send(f"Latency: **{round(self.client.latency * 1000)}ms**")
+        await ctx.send(f"Pong?: **{round(self.client.latency * 1000)}ms**")
 
     @commands.command(
         name="invite",

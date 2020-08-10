@@ -1,22 +1,5 @@
-import discord
 from discord.ext import commands
 import random
-
-
-def convert(lizt):
-    return ' '.join(lizt)
-
-
-def group_find(move):
-    temp = moves[0]
-    if move[0] in temp:
-        return moves[0]
-    else:
-        temp = moves[1]
-        if move[0] in temp:
-            return moves[1]
-        else:
-            return moves[2]
 
 
 class Scrambles(commands.Cog):
@@ -32,6 +15,21 @@ class Scrambles(commands.Cog):
         moves = (('U', 'D'), ('F', 'B'), ('R', 'L'))
         directions = ('', "'", '2')
         scramble_length = random.randint(17, 25)
+
+        def convert(lizt):
+
+            return ' '.join(lizt)
+
+        def group_find(move):
+            temp = moves[0]
+            if move[0] in temp:
+                return moves[0]
+            else:
+                temp = moves[1]
+                if move[0] in temp:
+                    return moves[1]
+                else:
+                    return moves[2]
 
         scramble = []
         for i in range(scramble_length):
