@@ -295,11 +295,12 @@ class Notation(commands.Cog):
         lma = discord.Embed(title="Double Layer Left Inverted", color=0xADFF2F)
         lma.add_field(name="Action", value="Rotate left two layers 90 degrees anticlockwise.", inline=False)
         lma.add_field(name="Acknowledgements", value="Double layer move.", inline=False)
-        lma.set_thumbnail(
-            url="https://cdn.discordapp.com/attachments/738890956912459777/739926783016566804/ld-notation-colored.png")
+        lma.set_thumbnail(url="")
         lma.set_footer(text="View from front face.")
         await ctx.send(embed=lma)
 
 
 def setup(client: commands.Bot):
     client.add_cog(Notation(client))
+
+# url="https://cdn.discordapp.com/attachments/738890956912459777/739926783016566804/ld-notation-colored.png")

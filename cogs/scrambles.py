@@ -57,6 +57,14 @@ class Scrambles(commands.Cog):
     async def scram2x2(self, ctx: commands.Context):
         await ctx.send(scram(9, 10))
 
+    @commands.command(
+        name="1x1",
+        aliases=['1', '1X1', '1x', '1X', 'One', 'one', 'ONE']
+    )
+    @commands.guild_only()
+    async def scr1(self, ctx: commands.Context):
+        await ctx.send("No. That's stupid.")
+
 
 def setup(client: commands.Bot):
     client.add_cog(Scrambles(client))
