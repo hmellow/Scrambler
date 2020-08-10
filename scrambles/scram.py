@@ -1,9 +1,5 @@
 import random
 
-components_3x3 = {
-    'moves': (('U', 'D'), ('F', 'B'), ('R', 'L')), 
-    'directions': ('', "'", '2')
-    }
 
 class Scram():
     scramble = []
