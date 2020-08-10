@@ -47,8 +47,15 @@ class Scrambles(commands.Cog):
     )
     @commands.guild_only()
     async def scram3x3(self, ctx: commands.Context):
-
         await ctx.send(scram(17, 25))
+
+    @commands.command(
+        name="2x2",
+        aliases=['2', '2X2', '2x', '2X', 'Two', 'two', 'TWO']
+    )
+    @commands.guild_only()
+    async def scram2x2(self, ctx: commands.Context):
+        await ctx.send(scram(9, 10))
 
 
 def setup(client: commands.Bot):
