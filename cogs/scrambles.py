@@ -13,11 +13,11 @@ class Scrambles(commands.Cog):
     )
     @commands.guild_only()
     async def scram3x3(self, ctx: commands.Context):
-        scram = Scram({'moves': (('U', 'D'), ('F', 'B'), ('R', 'L')), 'directions': ('', "'", '2')}, 17, 25)
+        scram = Scram(3, 3, 17, 25)
         scram.scram()
         scram.convert()
 
-        s3 = "**" + convert(scram.scramble) + "**"
+        s3 = "**" + scram.scramble + "**"
 
         await ctx.send(s3)
 
@@ -27,11 +27,11 @@ class Scrambles(commands.Cog):
     )
     @commands.guild_only()
     async def scram2x2(self, ctx: commands.Context):
-        scram = Scram({'moves': (('U', 'D'), ('F', 'B'), ('R', 'L')), 'directions': ('', "'", '2')}, 9, 10)
+        scram = Scram(2, 2, 9, 10)
         scram.scram()
         scram.convert()
 
-        s3 = "**" + convert(scram.scramble) + "**"
+        s3 = "**" + scram.scramble + "**"
 
         await ctx.send(s3)
 

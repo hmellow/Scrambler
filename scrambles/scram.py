@@ -4,7 +4,10 @@ import random
 class Scram():
     scramble = []
 
-    def __init__(self, components, min, max):
+    def __init__(self, sizeX, sizeY, min, max):
+        with open('scram_components.txt') as f:
+            if sizeX == sizeY:
+                self.components = f.readline(sizeX - 2)
         self.components = components
         self.scramble_length = random.randint(min, max)
     
