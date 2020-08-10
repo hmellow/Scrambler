@@ -43,7 +43,7 @@ class Scrambles(commands.Cog):
                         scramble.append(random.choice(move) + random.choice(directions))
                         break
 
-        s3x = convert(scramble)
+        s3x = "**" + convert(scramble) + "**"
 
         await ctx.send(s3x)
 
