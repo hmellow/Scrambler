@@ -8,7 +8,7 @@ class Help(commands.Cog):
 
     @commands.command(
             name="help",
-            aliases=["Help","HELP"]
+            aliases=["Help", "HELP"]
     )
     @commands.guild_only()
     async def help(self, ctx: commands.Context):
