@@ -29,7 +29,6 @@ class Info(commands.Cog):
     )
     @commands.guild_only()
     @commands.is_owner()
-    @commands.cooldown(2, 3, commands.BucketType.user)
     async def test(self, ctx: commands.Context):
         await ctx.send(f"Testing complete")
 
