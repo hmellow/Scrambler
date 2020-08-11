@@ -30,7 +30,7 @@ class Info(commands.Cog):
     @commands.guild_only()
     @commands.is_owner()
     async def test(self, ctx: commands.Context):
-        await ctx.send("This is used for when I want to test stuff.")
+        await ctx.send("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.")
 
 
 def setup(client: commands.Bot):
