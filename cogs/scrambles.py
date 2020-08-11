@@ -31,9 +31,9 @@ class Scrambles(commands.Cog):
         scram.scram()
         scram.convert()
 
-        s3 = "**" + scram.scramble + "**"
+        s2 = "**" + scram.scramble + "**"
 
-        await ctx.send(s3)
+        await ctx.send(s2)
 
     @commands.command(
         name="1x1",
@@ -42,6 +42,20 @@ class Scrambles(commands.Cog):
     @commands.guild_only()
     async def scr1(self, ctx: commands.Context):
         await ctx.send("No. That's stupid.")
+
+    @commands.command(
+        name="4x4",
+        aliases=['4', '4X4', '4x', '4X', 'Four', 'four', 'FOUR']
+    )
+    @commands.guild_only()
+    async def scram4(self, ctx: commands.Context):
+        scram = Scram(4, 4, 42, 49)
+        scram.scram()
+        scram.convert()
+
+        s4 = "**" + scram.scramble + "**"
+
+        await ctx.send(s4)
 
 
 def setup(client: commands.Bot):
