@@ -8,7 +8,7 @@ class Help(commands.Cog):
 
     @commands.command(
             name="help",
-            aliases=["Help","HELP"]
+            aliases=["Help", "HELP", "h", "H"]
     )
     @commands.guild_only()
     @commands.cooldown(2, 3, commands.BucketType.user)
