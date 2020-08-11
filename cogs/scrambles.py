@@ -12,6 +12,7 @@ class Scrambles(commands.Cog):
         aliases=['3', '3X3', '3x', '3X', 'Three', 'three', 'THREE']
     )
     @commands.guild_only()
+    @commands.cooldown(2, 3, commands.BucketType.user)
     async def scram3x3(self, ctx: commands.Context):
         scram = Scram(3, 3, 17, 25)
         scram.scram()
@@ -26,6 +27,7 @@ class Scrambles(commands.Cog):
         aliases=['2', '2X2', '2x', '2X', 'Two', 'two', 'TWO']
     )
     @commands.guild_only()
+    @commands.cooldown(2, 3, commands.BucketType.user)
     async def scram2x2(self, ctx: commands.Context):
         scram = Scram(2, 2, 9, 10)
         scram.scram()
@@ -40,6 +42,7 @@ class Scrambles(commands.Cog):
         aliases=['1', '1X1', '1x', '1X', 'One', 'one', 'ONE']
     )
     @commands.guild_only()
+    @commands.cooldown(2, 3, commands.BucketType.user)
     async def scr1(self, ctx: commands.Context):
         await ctx.send("No. That's stupid.")
 
@@ -48,6 +51,7 @@ class Scrambles(commands.Cog):
         aliases=['4', '4X4', '4x', '4X', 'Four', 'four', 'FOUR']
     )
     @commands.guild_only()
+    @commands.cooldown(2, 3, commands.BucketType.user)
     async def scram4(self, ctx: commands.Context):
         scram = Scram(4, 4, 42, 49)
         scram.scram()

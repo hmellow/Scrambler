@@ -11,6 +11,7 @@ class Help(commands.Cog):
             aliases=["Help","HELP"]
     )
     @commands.guild_only()
+    @commands.cooldown(2, 3, commands.BucketType.user)
     async def help(self, ctx: commands.Context):
         halp = discord.Embed(title="Help (Categories)", color=0xADFF2F)
         halp.add_field(name="Notation", value="\a", inline=False)

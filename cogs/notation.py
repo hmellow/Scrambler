@@ -11,6 +11,7 @@ class Notation(commands.Cog):
         aliases=['up', 'UP', 'uP', 'U']
     )
     @commands.guild_only()
+    @commands.cooldown(2, 3, commands.BucketType.user)
     async def up(self, ctx: commands.Context):
         up = discord.Embed(title="Up", color=0xADFF2F)
         up.add_field(name="Action", value="Rotate top face 90 degrees clockwise.", inline=False)
@@ -24,6 +25,7 @@ class Notation(commands.Cog):
         aliases=[]
     )
     @commands.guild_only()
+    @commands.cooldown(2, 3, commands.BucketType.user)
     async def upinverted(self, ctx: commands.Context):
         upr = discord.Embed(title="Up Inverted", color=0xADFF2F)
         upr.add_field(name="Action", value="Rotate top face 90 degrees anticlockwise.", inline=False)
@@ -37,6 +39,7 @@ class Notation(commands.Cog):
         aliases=['down', 'Down', 'DOWN']
     )
     @commands.guild_only()
+    @commands.cooldown(2, 3, commands.BucketType.user)
     async def down(self, ctx: commands.Context):
         down = discord.Embed(title="Down", color=0xADFF2F)
         down.add_field(name="Action", value="Rotate bottom face 90 degrees clockwise.", inline=False)
@@ -50,6 +53,7 @@ class Notation(commands.Cog):
         aliases=[]
     )
     @commands.guild_only()
+    @commands.cooldown(2, 3, commands.BucketType.user)
     async def downinverted(self, ctx: commands.Context):
         din = discord.Embed(title="Down Inverted", color=0xADFF2F)
         din.add_field(name="Action", value="Rotate bottom face 90 degrees anticlockwise.", inline=False)
@@ -63,6 +67,7 @@ class Notation(commands.Cog):
         aliases=['Left, left, LEFT']
     )
     @commands.guild_only()
+    @commands.cooldown(2, 3, commands.BucketType.user)
     async def left(self, ctx: commands.Context):
         left = discord.Embed(title="Left", color=0xADFF2F)
         left.add_field(name="Action", value="Rotate left face 90 degrees clockwise.", inline=False)
@@ -76,6 +81,7 @@ class Notation(commands.Cog):
         aliases=[]
     )
     @commands.guild_only()
+    @commands.cooldown(2, 3, commands.BucketType.user)
     async def leftinverted(self, ctx: commands.Context):
         linv = discord.Embed(title="Left Inverted", color=0xADFF2F)
         linv.add_field(name="Action", value="Rotate left face 90 degrees anticlockwise.", inline=False)
@@ -89,6 +95,7 @@ class Notation(commands.Cog):
         aliases=['Right', 'right', 'RIGHT']
     )
     @commands.guild_only()
+    @commands.cooldown(2, 3, commands.BucketType.user)
     async def right(self, ctx: commands.Context):
         rgt = discord.Embed(title="Right", color=0xADFF2F)
         rgt.add_field(name="Action", value="Rotate right face 90 degrees clockwise.", inline=False)
@@ -103,6 +110,7 @@ class Notation(commands.Cog):
         aliases=[]
     )
     @commands.guild_only()
+    @commands.cooldown(2, 3, commands.BucketType.user)
     async def rightinverted(self, ctx: commands.Context):
         rin = discord.Embed(title="Right Inverted", color=0xADFF2F)
         rin.add_field(name="Action", value="Rotate right face 90 degrees anticlockwise.", inline=False)
@@ -116,6 +124,7 @@ class Notation(commands.Cog):
         aliases=['net', 'NET', 'unfold', 'UNFOLD', 'Unfold']
     )
     @commands.guild_only()
+    @commands.cooldown(2, 3, commands.BucketType.user)
     async def net(self, ctx: commands.Context):
         netm = discord.Embed(title="Net", color=0xADFF2F)
         netm.add_field(name="Right", value="Blue", inline=True)
@@ -133,6 +142,7 @@ class Notation(commands.Cog):
         aliases=['e']
     )
     @commands.guild_only()
+    @commands.cooldown(2, 3, commands.BucketType.user)
     async def emid(self, ctx: commands.Context):
         mnot = discord.Embed(title="Horizontal Slice", color=0xADFF2F)
         mnot.add_field(name="Action",
@@ -148,6 +158,7 @@ class Notation(commands.Cog):
         aliases=["e'"]
     )
     @commands.guild_only()
+    @commands.cooldown(2, 3, commands.BucketType.user)
     async def emidinv(self, ctx: commands.Context):
         mpr = discord.Embed(title="Horizontal Slice Inverted", color=0xADFF2F)
         mpr.add_field(name="Action",
@@ -163,6 +174,7 @@ class Notation(commands.Cog):
         aliases=["m"]
     )
     @commands.guild_only()
+    @commands.cooldown(2, 3, commands.BucketType.user)
     async def mid(self, ctx: commands.Context):
         ems = discord.Embed(title="Vertical Slice", color=0xADFF2F)
         ems.add_field(name="Action",
@@ -178,6 +190,7 @@ class Notation(commands.Cog):
         aliases=["m'"]
     )
     @commands.guild_only()
+    @commands.cooldown(2, 3, commands.BucketType.user)
     async def invertmid(self, ctx: commands.Context):
         ein = discord.Embed(title="Vertical Slice Inverted", color=0xADFF2F)
         ein.add_field(name="Action",
@@ -193,6 +206,7 @@ class Notation(commands.Cog):
         aliases=[]
     )
     @commands.guild_only()
+    @commands.cooldown(2, 3, commands.BucketType.user)
     async def doblu(self, ctx: commands.Context):
         debu = discord.Embed(title="Double Layer Up", color=0xADFF2F)
         debu.add_field(name="Action", value="Rotate top two layers 90 degrees clockwise", inline=False)
@@ -207,6 +221,7 @@ class Notation(commands.Cog):
         aliases=[]
     )
     @commands.guild_only()
+    @commands.cooldown(2, 3, commands.BucketType.user)
     async def indu(self, ctx: commands.Context):
         indu = discord.Embed(title="Double Layer Up Inverted", color=0xADFF2F)
         indu.add_field(name="Action", value="Rotate top two layers 90 degrees anticlockwise", inline=False)
@@ -221,6 +236,7 @@ class Notation(commands.Cog):
         aliases=[]
     )
     @commands.guild_only()
+    @commands.cooldown(2, 3, commands.BucketType.user)
     async def dldow(self, ctx: commands.Context):
         dwn = discord.Embed(title="Double Layer Down", color=0xADFF2F)
         dwn.add_field(name="Action", value="Rotate bottom two layers 90 degrees clockwise", inline=False)
@@ -235,6 +251,7 @@ class Notation(commands.Cog):
         aliases=[]
     )
     @commands.guild_only()
+    @commands.cooldown(2, 3, commands.BucketType.user)
     async def dddinv(self, ctx: commands.Context):
         ddinv = discord.Embed(title="Double Layer Down Inverted", color=0xADFF2F)
         ddinv.add_field(name="Action", value="Rotate bottom two layers 90 degrees anticlockwise.", inline=False)
@@ -249,6 +266,7 @@ class Notation(commands.Cog):
         aliases=[]
     )
     @commands.guild_only()
+    @commands.cooldown(2, 3, commands.BucketType.user)
     async def rar(self, ctx: commands.Context):
         rar = discord.Embed(title="Double Layer Right", color=0xADFF2F)
         rar.add_field(name="Action", value="Rotate right two layers 90 degrees clockwise.", inline=False)
@@ -263,6 +281,7 @@ class Notation(commands.Cog):
         aliases=[]
     )
     @commands.guild_only()
+    @commands.cooldown(2, 3, commands.BucketType.user)
     async def rainv(self, ctx: commands.Context):
         rain = discord.Embed(title="Double Layer Right Inverted", color=0xADFF2F)
         rain.add_field(name="Action", value="Rotate right two layers 90 degrees anticlockwise.", inline=False)
@@ -277,6 +296,7 @@ class Notation(commands.Cog):
         aliases=[]
     )
     @commands.guild_only()
+    @commands.cooldown(2, 3, commands.BucketType.user)
     async def laul(self, ctx: commands.Context):
         lanm = discord.Embed(title="Double Layer Left", color=0xADFF2F)
         lanm.add_field(name="Action", value="Rotate left two layers 90 degrees clockwise.", inline=False)
@@ -291,6 +311,7 @@ class Notation(commands.Cog):
         aliases=[]
     )
     @commands.guild_only()
+    @commands.cooldown(2, 3, commands.BucketType.user)
     async def lane(self, ctx: commands.Context):
         lma = discord.Embed(title="Double Layer Left Inverted", color=0xADFF2F)
         lma.add_field(name="Action", value="Rotate left two layers 90 degrees anticlockwise.", inline=False)

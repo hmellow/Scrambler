@@ -10,6 +10,7 @@ class Info(commands.Cog):
         aliases=['latency, Ping, Latency']
     )
     @commands.guild_only()
+    @commands.cooldown(2, 3, commands.BucketType.user)
     async def ping(self, ctx: commands.Context):
         await ctx.send(f"Latency: **{round(self.client.latency * 1000)}ms**")
 
@@ -18,8 +19,19 @@ class Info(commands.Cog):
         aliases=['Invite']
     )
     @commands.guild_only()
+    @commands.cooldown(2, 3, commands.BucketType.user)
     async def invite(self, ctx: commands.Context):
         await ctx.send("**PineCube server invite:** https://discord.gg/55nrRkr")
+
+    @commands.command(
+        name="test",
+        aliases=["t", "T", "Test", "TEST"]
+    )
+    @commands.guild_only()
+    @commands.is_owner()
+    @commands.cooldown(2, 3, commands.BucketType.user)
+    async def test(self, ctx: commands.Context):
+        await ctx.send(f"Testing complete")
 
 
 def setup(client: commands.Bot):
