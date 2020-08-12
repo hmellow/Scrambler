@@ -1,5 +1,6 @@
 import random
-import scram_components
+from scrambles import scram_components
+
 
 class Scram():
     scramble = []
