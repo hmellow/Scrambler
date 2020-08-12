@@ -55,6 +55,18 @@ class Scrambles(commands.Cog, Scram):
     async def scr1(self, ctx: commands.Context):
         await ctx.send("No. That's stupid.")
 
+    @commands.command(
+        name='5x5',
+        aliases=['5', '5X5', '5x', '5X', 'Five', 'five', 'FIVE']
+    )
+    @commands.guild_only()
+    @commands.cooldown(2, 3, commands.BucketType.user)
+    async def scr5(self, ctx: commands.Context):
+        self.scram(5, 5, 60, 60)
+
+        s5 = "**" + self.convert() + "**"
+
+        await ctx.send(s5)
 
 def setup(client: commands.Bot):
     client.add_cog(Scrambles(client))
