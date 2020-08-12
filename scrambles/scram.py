@@ -27,4 +27,5 @@ class Scram():
                         break
     
     def convert(self):
-        return scramble = ' '.join(self.scramble)
+        scramble = ' '.join(self.scramble)
+        return scramble
