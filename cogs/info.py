@@ -32,6 +32,15 @@ class Info(commands.Cog):
     async def test(self, ctx: commands.Context):
         await ctx.send("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.")
 
+    @commands.command(
+        name="Alpha",
+        aliases=['alpha, ALPHA']
+    )
+    @commands.guild_only()
+    @commands.cooldown(2, 3, commands.BucketType.user)
+    async def alpha(self, ctx: commands.Context):
+        await ctx.send("This is for alpha to ask to put something idk man.")
+
 
 def setup(client: commands.Bot):
     client.add_cog(Info(client))
