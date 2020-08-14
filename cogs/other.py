@@ -22,8 +22,8 @@ class Other(commands.Cog):
     @commands.guild_only()
     @commands.cooldown(2, 3, commands.BucketType.user)
     async def alpha(self, ctx: commands.Context):
-        await ctx.send("This is for alpha to ask to put something idk man.")
-
+        alp = discord.Embed(title="Click here!", url="https://www.google.com/", color=0x6b00ff)
+        await ctx.send(embed=alp)
 
 def setup(client: commands.Bot):
     client.add_cog(Other(client))
