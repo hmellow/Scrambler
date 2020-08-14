@@ -10,7 +10,6 @@ normals = {
     3: {'moves': (('U', 'D'), ('F', 'B'), ('R', 'L')), 'directions': ('', "'", '2')},
     4: {'moves': (('U', 'D'), ('F', 'B'), ('R', 'L')), 'directions': ('', "'", '2', 'w2', 'w', "w'")},
     5: {'moves': (('U', 'D'), ('F', 'B'), ('R', 'L')), 'directions': ('', "'", '2', 'w2', 'w', "w'")},
-    6: {'moves': (('U', 'D'), ('F', 'B'), ('R', 'L')), 'directions': ('', "'", '2', 'w2', 'w', "w'")},
     37: {'moves': (('U', 'D'), ('F', 'B'), ('R', 'L')), 'directions': ('', "'")},
     38: {'moves': (('U', 'D'), ('F', 'B'), ('R', 'L')), 'directions': ('', "'")},
     39: {'moves': ('r', 'l'), 'directions': ('', "'")},
