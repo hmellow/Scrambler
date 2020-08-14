@@ -68,5 +68,19 @@ class Scrambles(commands.Cog, Scram):
 
         await ctx.send(s5)
 
+    @commands.command(
+        name='Skewb',
+        aliases=['skewb', 'SKEWB']
+    )
+    @commands.guild_only()
+    @commands.cooldown(2, 3, commands.BucketType.user)
+    async def skewb(self, ctx: commands.Context):
+        self.scram(37, 37, 8, 9)
+
+        sk = "**" + self.convert() + "**"
+
+        await ctx.send(sk)
+
+
 def setup(client: commands.Bot):
     client.add_cog(Scrambles(client))
