@@ -30,7 +30,7 @@ class Other(commands.Cog):
         aliases=['Purge', 'PURGE', 'clean', 'Clean', 'CLEAN']
     )
     @commands.guild_only()
-    @commands.bot_has_guild_permissions(manage_messages=True)
+    @commands.has_guild_permissions(manage_messages=True)
     async def purge(self, ctx: commands.Context, amt=10):
         await ctx.channel.purge(limit=amt)
 
