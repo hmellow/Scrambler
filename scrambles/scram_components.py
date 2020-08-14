@@ -10,12 +10,13 @@ normals = {
     3: {'moves': (('U', 'D'), ('F', 'B'), ('R', 'L')), 'directions': ('', "'", '2')},
     4: {'moves': (('U', 'D'), ('F', 'B'), ('R', 'L')), 'directions': ('', "'", '2', 'w2', 'w', "w'")},
     5: {'moves': (('U', 'D'), ('F', 'B'), ('R', 'L')), 'directions': ('', "'", '2', 'w2', 'w', "w'")},
+    6: {'moves': (('U', 'D'), ('F', 'B'), ('R', 'L')), 'directions': ('', "'", '2', 'w2', 'w', "w'")},
     37: {'moves': (('U', 'D'), ('F', 'B'), ('R', 'L')), 'directions': ('', "'")},
     38: {'moves': (('U', 'D'), ('F', 'B'), ('R', 'L')), 'directions': ('', "'")},
     39: {'moves': ('r', 'l'), 'directions': ('', "'")},
     40: {'moves': ('u', 'd'), 'directions': ('', "'")},
     41: {'moves': ('R', "D"), 'directions': ('++', "--")},
-    42: {'moves': ('U'), 'directions': ('', "'")}
+    42: {'moves': 'U', 'directions': ('', "'")}
 }
 
 # Irregulars are for puzzles with different sized sides. Use tuples as the key according to (sizeX, sizeY, sizeZ)
