@@ -94,14 +94,21 @@ class Scrambles(commands.Cog, Scram):
         await ctx.send(mg)
 
     # Pyraminx:
-#    @commands.command(
-#        name='Pyraminx',
-#        aliases=['pyraminx', 'PYRAMINX', 'PYRA', 'pyra', 'Pyra', 'Pyramid', 'PYRAMID', 'pyramid']
-#    )
-#    @commands.guild_only()
-#    @commands.cooldown(2, 3, commands.BucketType.user)
-#    async def pyra(self, ctx: commands.Context):
-#        self.scram(38, 38, 8, 9)
+    @commands.command(
+        name='Pyraminx',
+        aliases=['pyraminx', 'PYRAMINX', 'PYRA', 'pyra', 'Pyra', 'Pyramid', 'PYRAMID', 'pyramid']
+    )
+    @commands.guild_only()
+    @commands.cooldown(2, 3, commands.BucketType.user)
+    async def pyra(self, ctx: commands.Context):
+        self.scram(38, 38, 8, 9)
+        pra1 = self.convert()
+        self.scram(39, 39, 1, 1)
+        pra2 = self.convert()
+        self.scram(40, 40, 1, 1)
+        pra3 = self.convert()
+        pra = "**" + pra1 + " " + pra2 + " " + pra3 + "**"
+        await ctx.send(pra)
 
 
 def setup(client: commands.Bot):
