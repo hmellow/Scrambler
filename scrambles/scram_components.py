@@ -14,7 +14,7 @@ normals = {
     38: {'moves': (('U', 'D'), ('F', 'B'), ('R', 'L')), 'directions': ('', "'")},
     39: {'moves': ('r', 'l'), 'directions': ('', "'")},
     40: {'moves': ('u', 'd'), 'directions': ('', "'")},
-    41: {'moves': ('R', "D"), 'directions': ('++', "-")},
+    41: {'moves': ('R', "D"), 'directions': ('++', "--")},
     42: {'moves': ('U'), 'directions': ('', "'")}
 }
 

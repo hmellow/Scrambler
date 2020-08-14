@@ -81,6 +81,25 @@ class Scrambles(commands.Cog, Scram):
 
         await ctx.send(sk)
 
+    @commands.command(
+        name="Megaminx",
+        aliases=['megaminx', 'MEGAMINX', 'mega', 'MEGA', 'Mega', 'dodecahedron', 'Dodecahedron', 'DODECAHEDRON']
+    )
+    @commands.guild_only()
+    @commands.cooldown(2, 3, commands.BucketType.user)
+    async def mega(self, ctx: commands.Context):
+        self.scram(41, 41, 10, 10)
+
+        mga = self.convert()
+
+        self.scram(42, 42, 1, 1)
+
+        mga2 = self.convert()
+
+        mg = "**" + mga + " " + mga2 + "**"
+
+        await ctx.send(mg)
+
 #    @commands.command(
 #        name='Pyraminx',
 #        aliases=['pyraminx', 'PYRAMINX', 'PYRA', 'pyra', 'Pyra', 'Pyramid', 'PYRAMID', 'pyramid']
