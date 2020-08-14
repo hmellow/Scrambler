@@ -54,6 +54,7 @@ class Scrambles(commands.Cog, Scram):
     async def scr1(self, ctx: commands.Context):
         await ctx.send("No. That's stupid.")
 
+    # 5x5:
     @commands.command(
         name='5x5',
         aliases=['5', '5X5', '5x', '5X', 'Five', 'five', 'FIVE']
@@ -65,6 +66,7 @@ class Scrambles(commands.Cog, Scram):
         s5 = "**" + self.convert() + "**"
         await ctx.send(s5)
 
+    # Skewb:
     @commands.command(
         name='Skewb',
         aliases=['skewb', 'SKEWB']
@@ -76,6 +78,7 @@ class Scrambles(commands.Cog, Scram):
         sk = "**" + self.convert() + "**"
         await ctx.send(sk)
 
+    # Megaminx:
     @commands.command(
         name="Megaminx",
         aliases=['megaminx', 'MEGAMINX', 'mega', 'MEGA', 'Mega', 'dodecahedron', 'Dodecahedron', 'DODECAHEDRON']
@@ -90,6 +93,7 @@ class Scrambles(commands.Cog, Scram):
         mg = "**" + mga + " " + mga2 + "**"
         await ctx.send(mg)
 
+    # Pyraminx:
 #    @commands.command(
 #        name='Pyraminx',
 #        aliases=['pyraminx', 'PYRAMINX', 'PYRA', 'pyra', 'Pyra', 'Pyramid', 'PYRAMID', 'pyramid']
