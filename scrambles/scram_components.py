@@ -3,6 +3,8 @@
 # 38 is Pyraminx main
 # 39 is Pyraminx primary corners
 # 40 is Pyraminx secondary corners
+# 41 is Megaminx main
+# 42 is Megaminx secondary
 normals = {
     2: {'moves': (('U', 'D'), ('F', 'B'), ('R', 'L')), 'directions': ('', "'", '2')},
     3: {'moves': (('U', 'D'), ('F', 'B'), ('R', 'L')), 'directions': ('', "'", '2')},
@@ -11,7 +13,9 @@ normals = {
     37: {'moves': (('U', 'D'), ('F', 'B'), ('R', 'L')), 'directions': ('', "'")},
     38: {'moves': (('U', 'D'), ('F', 'B'), ('R', 'L')), 'directions': ('', "'")},
     39: {'moves': ('r', 'l'), 'directions': ('', "'")},
-    40: {'moves': ('u', 'd'), 'directions': ('', "'")}
+    40: {'moves': ('u', 'd'), 'directions': ('', "'")},
+    41: {'moves': ('R', "D"), 'directions': ('++', "-")},
+    42: {'moves': ('U'), 'directions': ('', "'")}
 }
 
 # Irregulars are for puzzles with different sized sides. Use tuples as the key according to (sizeX, sizeY, sizeZ)
