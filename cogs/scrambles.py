@@ -81,6 +81,15 @@ class Scrambles(commands.Cog, Scram):
 
         await ctx.send(sk)
 
+#    @commands.command(
+#        name='Pyraminx',
+#        aliases=['pyraminx', 'PYRAMINX', 'PYRA', 'pyra', 'Pyra', 'Pyramid', 'PYRAMID', 'pyramid']
+#    )
+#    @commands.guild_only()
+#    @commands.cooldown(2, 3, commands.BucketType.user)
+#    async def pyra(self, ctx: commands.Context):
+#        self.scram(38, 38, 8, 9)
+
 
 def setup(client: commands.Bot):
     client.add_cog(Scrambles(client))
