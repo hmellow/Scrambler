@@ -22,7 +22,7 @@ class Other(commands.Cog):
     @commands.guild_only()
     @commands.cooldown(2, 3, commands.BucketType.user)
     async def alpha(self, ctx: commands.Context):
-        alp = discord.Embed(title="Click here to learn more!", url="https://www.google.com/", color=0x6b00ff)
+        alp = discord.Embed(title="Click here to learn more!", url="https://bit.ly/2PZ6eR7", color=0x6b00ff)
         await ctx.send(embed=alp)
 
     @commands.command(
