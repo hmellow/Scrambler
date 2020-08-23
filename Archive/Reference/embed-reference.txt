@@ -1,9 +1,0 @@
-# This file is for me to look at whenever I make an embed cause I always forget how.
-
-
-reference_embed = discord.Embed(title="Tile", url="Title URL", description="Description", color=0xFFFFFF)
-reference_embed.add_field(name="Field", value="Field value", inline=False)
-reference_embed.set_thumbnail(url="Thumbnail URL")
-reference_embed.set_image(url='URL')
-reference_embed.set_author(name="Author", url="Author URL", icon_url="Author icon URL")
-reference_embed.set_footer(text="Footer")
